@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet/less"  type="text/css" href="style.less"> -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="./images/logo.png" alt="logo" height="85%" />Evolution</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"> <a href="/" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 576 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>
+            Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+            </svg>
+            About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#description" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+            Description</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./articles.html" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z" />
+            </svg>Articles</a>
+        </li>
+        <li class="navbar__btn">
+          <!-- <button class="btn btn-open">Open Modal</button> -->
+          <a href="#disclaimer" id="sign_up_info" class="button btn btn-open">Disclaimer</a>
+        </li>
+      </ul>
+  </nav>
+  <form class="color-picker" action="">
+    <fieldset>
+      <legend class="visually-hidden">Pick a color scheme</legend>
+      <label for="light" class="visually-hidden">Light</label>
+      <input type="radio" name="theme" id="light" checked>
+  
+      <label for="pink" class="visualy-hidden">1500-1800</label>
+      <input type="radio" id="pink" name="theme">
+  
+      <label for="blue" class="visualy-hidden">Early 20th</label>
+      <input type="radio" id="blue" name="theme">
+  
+      <label for="green" class="visualy-hidden">21st</label>
+      <input type="radio" id="green" name="theme">
+  
+      <label for="dark" class="visualy-hidden">Dark theme</label>
+      <input type="radio" id="dark" name="theme">
+    </fieldset>
+  </form>
+  <div class="cs-entry__content-wrap">
+    <div class="entry-content" id="article">
+      <p>Technology has become an integral part of our lives. From smartphones
+        to computers, these technologies have become indispensable, and we
+        heavily rely on them. In a relatively short span of time, technology has
+        rapidly advanced and now, many people cannot imagine life without it.</p>
+      <p>To fully understand the scope of this transformation, we must look at how technology has evolved and its
+        significance.</p>
+      <h2>Purpose Drives Technology Forward</h2>
+      <p>All technologies serve a purpose. For instance, search engines were
+        created to organize vast amounts of online data. Each upgrade builds
+        upon existing technologies, leading to continuous improvement. However,
+        this lightning-fast pace of technological evolution has made it
+        challenging for many to keep up.</p>
+      <p>Admittedly, summarizing the vast scope of technology in a single blog
+        post is nearly impossible. That said, here's a brief glimpse into the
+        rapid evolution of the Internet and technology in recent years.</p>
+      <h2>The Past: World, Meet the Internet</h2>
+      <p>Looking back to the 1990s, the Internet was a <a rel="noopener"
+          href="https://www.scienceandmediamuseum.org.uk/objects-and-stories/short-history-internet" target="_blank"
+          title="Delve into the history of the Internet."
+          aria-label="Delve into the history of the Internet (opens in a new window).">new commodity</a>
+        that gradually became accessible to households and businesses. For
+        those living in that era, the nostalgic sound of the painfully slow
+        dial-up signal connecting to the Internet remains a vivid memory
+        (EEEE-AAAAAHH!!!!).</p>
+      <p>Fortunately, as the Internet gained popularity, technology advanced,
+        eliminating the need for phone lines and providing faster connections to
+        the World Wide Web. This transformation allowed more people to
+        experience the benefits of the Internet and enjoy seamless online
+        experiences.</p>
+      <h3>Websites and Blogging Are Born</h3>
+      <p>Websites evolved right alongside the Internet. Suddenly, everyone had
+        a GeoCities or Tripod website dedicated to themselves. In their early
+        stages, websites were simple in both function and design. This was also
+        when the blogging craze began to gain popularity with the introduction
+        of "<a rel="noopener"
+          href="https://blog.hubspot.com/marketing/history-of-blogging?__hstc=14976809.78781e882e5b4abc66f654ced44c9e1c.1713528910411.1713528910411.1713689260155.2&amp;__hssc=14976809.1.1713689260155&amp;__hsfp=4179182191"
+          target="_blank" title="Learn about the history of blogs."
+          aria-label="Learn about the history of blogs (opens in a new window).">weblogs</a>" (later shortened to
+        "blogs"). Remember Xanga? If only we had known then what we know now.</p>
+      <h3>Floppy Discs: The Real-Life Save Icon</h3>
+      <p>After a few years, the process of sharing information became
+        increasingly convenient. Instead of relying on floppy discs or CD-ROMs,
+        people began exchanging documents through email or storing large files
+        on USB sticks or flash drives. This shift made the transfer of data much
+        more efficient and streamlined.</p>
+      <p>As new technologies emerged, they built upon one another, resulting
+        in more advanced, efficient, and powerful innovations. This rapid
+        development of the Internet has profoundly impacted the way we live,
+        work, and function in today's world.</p>
+      <h2>The Present: Snaps, Chats, and Double Taps</h2>
+      <p>In just a decade's time, access to the Internet has become almost
+        universal, surpassing the days of dial-up. Nowadays, it is a rare
+        occurrence to find a coffee shop, library, or any place of business
+        without the convenience of Wi-Fi connectivity. Even if Wi-Fi is out of
+        reach, most individuals effortlessly connect to the Internet using their
+        smartphones and personal hotspots through cellular data connections.</p>
+      <p>Today, the Internet connects people and businesses all around the
+        world. With a simple click, you can video call someone on the other side
+        of the globe, order groceries to be delivered to your doorstep, or even
+        attend classes from prestigious universities without leaving your home.
+        The possibilities seem endless.</p>
+      <h3>There’s an App for That</h3>
+      <p>With this anywhere/anytime access to the Internet, businesses have
+        developed web applications to cater to the common needs of consumers.
+        These applications can do everything from tracking food portions to
+        sending massive amounts of information in a click of a button.&nbsp; In a
+        world that’s always on the go, these apps provide convenience and
+        efficiency.</p>
+      <h3><span>The Evolution and Revolution of Communication</span></h3>
+      <p>Communication has undergone a remarkable evolution. Remember the days
+        of face-to-face conversations? Handwritten letters? Waiting by the
+        phone—the kind with a cord? Technology continuously reshapes how we
+        connect. Today, the most striking difference online is the ability to be
+        personable in an impersonal environment. Constant connection is the
+        name of the game. And with connection comes instant availability.
+        Bluetooth connections, talk-to-text, messaging apps in every form.
+        Whether you're driving, in meetings, or at home, connections are
+        everywhere.</p>
+      <h3>Social Media: Connecting People Like Never Before&nbsp;</h3>
+      <p>We've watched texting evolve from the simple exchange of text-only
+        messages to the emergence of visual elements, thanks to the widespread
+        popularity of gifs, memes, emojis, and Bitmojis. In fact, with the rise
+        of short-form video sharing, traditional text is becoming more concise
+        (think Snapchat, Instagram Stories and Reels, Facebook Stories, etc.)
+        and accompanied by shorthand abbreviations.</p>
+      <p>Social media platforms have taken over our lives. As of July 2023, as
+        many as 4.88 billion people, or 59.9% of the world’s population, use
+        social media, according to a <a rel="noopener"
+          href="https://www.statista.com/statistics/617136/digital-population-worldwide/" target="_blank"
+          title="Look at the staggering statistics of people who use social media."
+          aria-label="Look at the staggering statistics of people who use social media (opens in a new window).">Statista
+          study</a>.
+        Facebook, X (formerly Twitter), Instagram, and TikTok are just a few
+        examples of how people stay connected in today's world. These platforms
+        allow people to share their thoughts, pictures, and videos with friends
+        and followers, making the world a smaller place. People can now connect
+        with others who share similar interests, creating online communities and
+        networks. Although superficial at times, this form of communication
+        helps people stay closer to each other when they would have otherwise
+        lost contact or never met.</p>
+      <h3>Face to Face (Virtually Speaking)</h3>
+      <p>Face-to-face conversations via technology are resurfacing, though,
+        and even strengthening, thanks to higher-quality video and streaming
+        capabilities (enter Skype, Microsoft Teams, Zoom, FaceTime, live
+        streaming, etc.). With more people engaging in web/video conferencing
+        online, geographic barriers that once hindered communication were torn
+        down. Instead, companies can engage with consumers in a more human
+        manner, people can talk to other people face-to-face without the need
+        for costly travel, and reaching out to people all over the world is
+        faster and easier.</p>
+      <p>The COVID-19 pandemic has reshaped the landscape of video-calling,
+        making it a new norm both in the workplace and at home. As remote work
+        and virtual meetings became necessary for safety, video-calling
+        platforms became essential tools for collaboration and communication.
+        From team meetings to virtual happy hours, video-calling provided a
+        lifeline for maintaining connections in a time of physical distancing.
+        Even with the pandemic in the rearview, the convenience and efficiency
+        of video-calling remains a valuable way to stay connected in a
+        fast-paced, globalized society.</p>
+      <h3>Cutting the Cord: The Era of Video Streaming</h3>
+      <p>Remember when Netflix was a primarily a DVD delivery company, sending
+        your favorite movies through the mail? Back before binge-watching
+        became our new normal.</p>
+      <p>Today, more and more people are <a rel="noopener"
+          href="https://www.ibc.org/trends/2020-in-review-did-otts-come-out-on-top/7127.article" target="_blank"
+          title="Understand how streaming services are taking over the entertainment market."
+          aria-label="Understand how streaming services are taking over the entertainment market (opens in a new window).">ditching
+          traditional cable</a>,
+        opting for digital streaming and video services like Netflix, YouTube
+        TV, and Hulu. Big brands are trying to keep up and compete, doing their
+        best to one-up each other with original content, availability, and
+        delivery channels (e.g., Apple TV+, Disney Plus, Prime Video, etc.).
+        From our favorite TV shows to live sports events, streaming services
+        have become the go-to for entertainment.</p>
+      <p>The rise of streaming has also changed the landscape for advertisers.
+        With more people opting out of traditional cable and satellite
+        television, businesses have shifted their focus towards digital
+        advertising on streaming platforms. This allows them to reach a wider
+        audience and target specific demographics with precision.</p>
+      <p>User-generated content is also a force to acknowledge. Thanks to
+        streaming options like Facebook Live, Instagram Live, and TikTok Live,
+        individuals and businesses can broadcast their own videos and
+        content.&nbsp; This has made it possible for anyone to create their own
+        brand and have a platform to showcase their talents, ideas, and
+        thoughts.</p>
+      <h3>Today’s Tech Forecast: iCloud Days Ahead</h3>
+      <p>Cloud-based services have revolutionized the way people and companies
+        operate. Instead of relying on a single device, more and more
+        businesses are storing everything online. This shift is transforming
+        traditional office environments and reshaping how people interact with
+        companies. The days of flash drives are numbered, thanks to the
+        prevalence of cloud storage options like iCloud, Google Drive, Dropbox,
+        and FTP sites.</p>
+      <p>With an array of new technologies enabling seamless access to
+        information and fostering connections, the future of technological
+        developments looks incredibly promising.</p>
+      <p><img
+          src="The%20Evolution%20of%20Technology%20Past,%20Present%20and%20Future_files/evolutionoftech_image2-opt.jpg"
+          alt="Floppy disc, CD, flash drive, and a chalk drawing of storing things in the cloud lined up on a black background."
+          data-udi="umb://media/9f4f59ac8e854719a0db12d88fdba25b"></p>
+      <h2>The Future: Emerging Trends on the Horizon</h2>
+      <p>As existing technologies continue to advance and integrate, both
+        consumers and businesses can anticipate a wealth of opportunities with
+        future technology. The pace of technological innovation will accelerate,
+        enabling greater efficiency and productivity in our work. While we
+        can't predict the future with certainty, we can speculate on the
+        evolution of technology based on emerging media and current trends. Here
+        are a few key trends to keep an eye on in the years to come.</p>
+      <h3>Smart is the New Sexy</h3>
+      <p>Smart technology has already seeped into our daily lives through the
+        use of voice assistants, smart home devices, and wearable tech. With the
+        continuous development of artificial intelligence (AI) and machine
+        learning, we can expect to see smarter and more intuitive devices in our
+        households. These advancements will not only provide convenience but
+        also enhance safety and security.</p>
+      <h3>Augmented Reality (AR) and Virtual Reality (VR) Take Center Stage</h3>
+      <p>Augmented reality (AR) and virtual reality (VR) have been slowly
+        gaining traction in various industries, but their full potential is yet
+        to be realized. From gaming and entertainment to education, training,
+        and healthcare, <a rel="noopener"
+          href="https://www.pcmag.com/news/augmented-reality-ar-vs-virtual-reality-vr-whats-the-difference"
+          target="_blank" title="Learn the difference between AR and VR."
+          aria-label="Learn the difference between AR and VR (opens in a new window).">AR/VR technology</a>
+        has the power to completely change the way we interact with our
+        environment. As these technologies become more accessible and
+        affordable, we can expect to see a surge in their use and application.</p>
+      <h3>The Internet of Things (IoT)</h3>
+      <p>The <a href="https://www.discovertec.com/iot" title="Read more about how IoT connects our devices.">Internet of
+          Things (IoT)</a>
+        is all about connecting everyday objects through the Internet. This
+        tech has already made its mark in various gadgets, from smart appliances
+        to cars and wearable fitness trackers. But that's just the beginning.
+        As IoT keeps evolving and merging with other tech, it's poised to
+        revolutionize our daily routines.</p>
+      <p>Imagine a world where your car alerts you to traffic jams, or your
+        alarm clock tells you your coffee's brewing. That's the IoT magic,
+        blurring the line between the physical and virtual realms. It's like
+        living in a sci-fi movie, with smart speakers, homes, and cars leading
+        the charge.</p>
+      <p>Think of IoT as a massive network of devices—gadgets, vehicles, home
+        appliances, you name it—all linked up and sharing data. The number of
+        IoT-connected devices worldwide is forecast to <a rel="noopener"
+          href="https://www.statista.com/statistics/1183457/iot-connected-devices-worldwide/" target="_blank"
+          title="Learn how many connected devices we’ll have by 2030."
+          aria-label="Learn how many connected devices we’ll have by 2030 (opens in a new window).">almost double</a>
+        from 15.1 billion in 2020 to more than 29 billion IoT devices in 2030.
+        This isn't some distant future; it's happening now, or at least, it's
+        right around the corner.</p>
+      <p>In short, IoT isn't just a buzzword; it's a game-changer that's already transforming our lives and shaping the
+        future.</p>
+      <h3>Working Remotely: The New Norm</h3>
+      <p>The COVID-19 pandemic triggered an <a rel="noopener"
+          href="https://www.weforum.org/agenda/2022/07/covid-19-reshaped-americans-work/" target="_blank"
+          title="Read how COVID-19 transformed the workforce and employee expectations."
+          aria-label="Read how COVID-19 transformed the workforce and employee expectations (opens in a new window).">unprecedented
+          transformation</a>
+        in our workforce. Technology played a pivotal role in making remote
+        work the new norm. Video conferencing platforms like Zoom, Microsoft
+        Teams, and Google Meet bridged the physical gap, turning homes into
+        virtual boardrooms and connecting teams across the globe. Collaborative
+        tools such as Slack and Trello ensured seamless coordination, even when
+        separated by miles.</p>
+      <p>This shift has blurred the boundaries between home and office, with
+        employees setting up home offices equipped with high-speed internet and
+        ergonomic chairs. Remote work has not only freed us from the daily
+        commute but also provided flexible schedules and an improved work-life
+        balance.</p>
+      <p>For businesses, remote work has presented cost-saving opportunities
+        by reducing overhead costs associated with physical offices and granting
+        access to a global talent pool. Looking ahead, remote work is poised to
+        remain a permanent fixture in our work landscape, reshaping our
+        understanding of the workplace and how we harmonize work and life. It
+        serves as yet another testament to the profound impact of technology on
+        our lives.</p>
+      <h3>Artificial Intelligence</h3>
+      <p><a href="https://www.discovertec.com/ai-solutions"
+          title="Learn how AI is evolving the way we live and work.">Artificial intelligence (AI)</a>
+        may sound complex, but in simpler terms, it involves teaching computers
+        to think and learn like humans. Over time, technological advancements
+        have propelled AI forward, making it smarter and more capable. Think of
+        AI as the brain behind tools like ChatGPT, which can chat with you like a
+        human, or chatbots that assist with customer service inquiries. These
+        AI-driven creations are just the beginning, showing how machines are
+        learning to understand and interact with us.</p>
+      <p>The latest leap in AI innovation comes in the form of generative AI, which uses a cutting-edge model called <a
+          rel="noopener" href="https://aws.amazon.com/what-is/stable-diffusion/" target="_blank"
+          title="Learn about this innovative AI model that is powering generative AI."
+          aria-label="Learn about this innovative AI model that is powering generative AI (opens in a new window).">Stable
+          Diffusion</a> to create photorealistic images, animations, and even videos from text and image prompts. For
+        instance, <a href="https://www.discovertec.com/blog/the-power-of-vector-based-ai"
+          title="Learn how vector-based DALL-E 2 uses AI to generate images.">DALL-E 2</a>
+        can create realistic images and artwork from natural language prompts,
+        blurring the line between human and machine creativity. In the video
+        domain, <a rel="noopener" href="https://www.nextdiffusion.ai/" target="_blank"
+          title="Read how Next Diffusion is using generative AI in the video space."
+          aria-label="Read how Next Diffusion is using generative AI in the video space (opens in a new window).">Next
+          Diffusion</a>
+        stands out, enabling the manipulation of existing video footage to
+        craft entirely new content. Whether it's background inpainting, face
+        swapping, or the creation of hyper-realistic individuals, the
+        possibilities in the realm of video editing are nothing short of
+        remarkable.</p>
+      <p>AI's influence echoes across industries, transforming how businesses
+        operate. In customer service, AI-powered chatbots provide quick,
+        personalized responses. Supply chain management relies on AI to predict
+        trends and streamline logistics. In healthcare, AI analyzes complex
+        medical data for disease predictions and treatments. Undoubtedly, AI is a
+        game-changer, refining how businesses function and interact with the
+        world.</p>
+      <p>As we look to the future, AI's trajectory is poised for astonishing
+        heights, promising more personalized content and transformative
+        breakthroughs in healthcare and scientific discovery. AI is our bridge
+        to a future where technology becomes astoundingly human-like in its
+        understanding and abilities.</p>
+      <h2>Why Bother Keeping Up with Technology?</h2>
+      <p>It's a valid question. Technology is in a constant state of flux, and
+        it can sometimes feel overwhelming to keep up with an ever-moving
+        target. But remember, staying abreast of technological advancements adds
+        <a href="https://www.discovertec.com/blog/the-rise-of-ai-exploring-the-possibilities-of-artificial-intelligence-for-businesses"
+          title="Learn how to add value to your business with AI.">value to your business</a>.
+      </p>
+      <p>Remaining up to date ensures that you don't miss out on
+        opportunities, become irrelevant, or lag behind your competitors.
+        Remember Kodak? They taught us a valuable lesson: don't fear embracing
+        change.</p>
+      <p>Here are a few effective strategies to stay informed and keep pace:</p>
+      <ul>
+        <li>Follow industry blogs (including <a href="https://www.discovertec.com/blog"
+            title="Check out DiscoverTec’s industry-leading blog.">ours</a>!)</li>
+        <li>Listen to industry thought leaders</li>
+        <li>Engage with relevant topics on social media</li>
+        <li>Join online and in-person groups</li>
+        <li>Tune in to tech-focused podcasts</li>
+        <li>Participate in tech forums</li>
+        <li>Subscribe to pertinent e-Newsletters</li>
+        <li>Utilize Google alerts</li>
+      </ul>
+      <p>By implementing these approaches, you can navigate the ever-changing
+        tech landscape with confidence and seize the advantages it presents.</p>
+      <h2>The Final Frontier</h2>
+      <p>In a world where technology knows no bounds, space may not be the
+        final frontier we once imagined. Instead, technology has become its own
+        frontier, an ever-evolving force that reshapes our world daily. With
+        every step we take into the realm of technology, we're forging new
+        habits and discovering novel ways of collaborating and thriving.</p>
+      <p>While the future remains uncertain, one thing is clear: we firmly
+        believe in harnessing the incredible potential of technology to craft
+        personalized solutions. The power of technology lies not just in its
+        innovation, but in its ability to transform lives and businesses alike.</p>
+      <p>Ready to embark on your own technological journey? <a href="https://www.discovertec.com/contact"
+          title="Contact DiscoverTec today for technological solutions for your business.">Contact DiscoverTec</a> today
+        and let us guide your business towards harnessing the limitless possibilities of technology.</p>
+
+
+    </div>
+    <div style="display: flex;flex-direction: column;gap: 20px;">
+      <div class="inputs">
+        <input type="checkbox" id="boldCheckbox" onchange="toggleHighlight('bold')" />
+        <label for="boldCheckbox">Highlight Bold Text</label>
+        <br />
+        <input type="checkbox" id="italicCheckbox" onchange="toggleHighlight('italic')" />
+        <label for="italicCheckbox">Highlight Italic Text</label>
+        <br />
+        <input type="checkbox" id="quoteCheckbox" onchange="toggleHighlight('quote')" />
+        <label for="quoteCheckbox">Highlight Quotes</label>
+        <br />
+        <input type="checkbox" id="linkCheckbox" onchange="toggleHighlight('link')" />
+        <label for="linkCheckbox">Highlight Links</label>
+        <br />
+        <input type="checkbox" id="figcaptionCheckbox" onchange="toggleHighlight('figcaption')" />
+        <label for="linkCheckbox">Highlight Captions</label>
+        <br />
+        <input type="checkbox" id="h2checkbox" onchange="toggleHighlight('h2')" />
+        <label for="linkCheckbox">Highlight HeadTitles</label>
+        <br />
+        <input type="checkbox" id="h3checkbox" onchange="toggleHighlight('h3')" />
+        <label for="linkCheckbox">Highlight Titles</label>
+        <br />
+      </div>
+
+      <div class="articleLinks inputs">
+        <h2>Articles</h2>
+      <ul>
+        <li><a href="./technology.html" title="Technology has become an integral part of our lives.">Technology has
+            become an integral part of our lives.</a>
+        </li>
+        <li><a href="./education.html" title="Social change, cultural evolution, weaving apprenticeship, and development: informal
+          education across three generations and 42 years in a Maya community">Social change, cultural evolution,
+            weaving apprenticeship, and development: informal
+            education across three generations and 42 years in a Maya community</a>
+        </li>
+        <li><a href="./fashion.html" title="Fashion
+        has a very long history. ">Fashion
+            has a very long history. </a>
+        </li>
+      </ul>
+    </div>
+    <div class="titleIdsDiv inputs">
+      <h3>In This Article</h3>
+    </div>
+    </div>
+  </div>
+  <!-- footer -->
+
+
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <img src="./images/logo.png" alt="logo" width="100px" />
+          <h1>Evolution</h1>
+          <p>Join us as we unravel the rich
+            tapestry of cultural evolution, celebrating the triumphs, challenges, and enduring legacies that
+            define who we are and where we are headed. Evolution: where the past meets the present, and the
+            future awaits.</p>
+        </div>
+        <div class="footer__link--items">
+          <h2>Pages</h2>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#description">Description</a>
+          <a href="/">Disclaimer</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Articles</h2>
+          <a href="fashion.html">Fashion</a>
+          <a href="education.html">Education</a>
+          <a href="technology.html">Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for discailmer  -->
+
+
+  <section class="modal hidden">
+    <div class="flex">
+      <img src="./images/revolution.jpg" width="50px" height="50px" alt="user" />
+      <button class="btn-close">⨉</button>
+    </div>
+    <div>
+      <h3>Stay in touch</h3>
+      <p>
+        Evolution is where we delve into history with a focus on typographical and color aesthetics. Our articles are
+        crafted with two distinct themes: the Historical Theme, reflecting typographical styles from the 16th to the
+        19th centuries, and the Antique Theme, which embraces the transition from early 20th-century print aesthetics to
+        modern color schemes.
+
+        As you explore our content, you'll notice subtle typographical changes and color palettes inspired by each
+        theme. The metadata integrated throughout our articles further enhances the visual experience, highlighting key
+        elements and providing context.
+
+        Please note that the sample websites referenced serve as resources to illustrate the evolution of typographical
+        and color trends. Their inclusion does not imply endorsement or affiliation.
+
+        Thank you for joining us on this journey through history, where typography and color bring the past to life in
+        vibrant detail.
+
+        Warm regards,
+      </p>
+    </div>
+
+    <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+    <button class="btn btn_ok">Ok</button>
+  </section>
+  <div class="overlay hidden"></div>
+  <script src="app.js"></script>
+  <script>
+    function toggleHighlight(type) {
+      const article = document.getElementById("article");
+
+      switch (type) {
+        case "bold":
+          article.classList.toggle("highlight-bold");
+          break;
+        case "italic":
+          article.classList.toggle("highlight-italic");
+          break;
+        case "quote":
+          article.classList.toggle("highlight-quote");
+          break;
+        case "link":
+          article.classList.toggle("highlight-link");
+          break;
+        case "figcaption":
+          article.classList.toggle("highlight-figcaption");
+          break;
+        case "h2":
+          article.classList.toggle("highlight-h2");
+          break;
+        case "h3":
+          article.classList.toggle("highlight-h3");
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+
+</body>
+
+</html>

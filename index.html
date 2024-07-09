@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet/less"  type="text/css" href="style.less"> -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="./images/logo.png" alt="logo" height="85%" />Evolution</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"> <a href="/" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 576 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>
+            Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+            </svg>
+            About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#description" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+            Description</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./articles.html" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z" />
+            </svg>Articles</a>
+        </li>
+        <li class="navbar__btn">
+          <!-- <button class="btn btn-open">Open Modal</button> -->
+          <a href="#disclaimer" id="sign_up_info" class="button btn btn-open">Disclaimer</a>
+        </li>
+      </ul>
+  </nav>
+
+  <!-- slider  -->
+  <div class="slider" id="home">
+    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+    <input type="radio" name="slider" title="slide2" class="slider__nav" />
+    <input type="radio" name="slider" title="slide3" class="slider__nav" />
+    <input type="radio" name="slider" title="slide4" class="slider__nav" />
+    <div class="slider__inner">
+      <div class="slider__contents">
+        <h2 class="slider__caption">Cultural Evolution</h2>
+        <p class="slider__txt"> A Brief Journey Through Time</p>
+
+      </div>
+      <div class="slider__contents">
+        <h2 class="slider__caption">Fashion's Cultural Odyssey</h2>
+        <p class="slider__txt">Fashion, a mirror of cultural evolution, evolves tirelessly, echoing the values
+          and trends of each era. </p>
+      </div>
+      <div class="slider__contents">
+        <h2 class="slider__caption">Educational Evolution Through Time</h2>
+        <p class="slider__txt">Education has evolved significantly over the years, reflecting shifts in cultural
+          values and societal needs. From traditional rote learning to modern experiential approaches, the
+          journey of education mirrors the changing landscape of human knowledge and understanding.</p>
+      </div>
+      <div class="slider__contents">
+        <h2 class="slider__caption">ech's Ever-Evolving Journey</h2>
+        <p class="slider__txt">Over the years, technology has undergone a remarkable evolution, transforming
+          from basic tools to complex systems that define modern life. Each innovation has left an indelible
+          mark on society, driving progress and shaping the future.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- hero section -->
+
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>ABOUT THE PROJECT</h1>
+        <h2>EVOLUTION</h2>
+
+        <button class="main__btn"><a href="/">Get Started</a></button>
+      </div>
+      <p>
+        Welcome to Evolution, where the tapestry of human progress is woven through the ages of fashion,
+        education, and technology. As we embark on this journey through time, we delve into the intricate
+        patterns of change that have shaped our societies, economies, and individual lives. From the elegant
+        revolutions of couture to the transformative waves of educational reform, and the relentless march
+        of technological innovation, our site is a testament to the enduring spirit of adaptation and
+        growth.
+        <br />
+        <br />
+        In our quest to understand the roots of modern civilization, we explore the echoes of the past and
+        the visions of the future. Each article is a window into a distinct era, a testament to the
+        resilience of human creativity and the enduring quest for knowledge. Join us as we unravel the rich
+        tapestry of cultural evolution, celebrating the triumphs, challenges, and enduring legacies that
+        define who we are and where we are headed. Evolution: where the past meets the present, and the
+        future awaits.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- themes part -->
+  <div class="margT">
+  <div class="responsive-container-block bigContainer">
+    <h1 id="description">Description</h1>
+    <div class="responsive-container-block Container bottomContainer">
+      <div class="ultimateImg">
+        <img class="mainImg" src="./images/theme1.jpg">
+        <div class="beigeBox">
+          <p class="beigeText">
+            During the 19th century, significant social and technological changes reshaped the world, leading to
+            remarkable developments in art, politics, and industry.
+          </p>
+          <!-- <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg"> -->
+        </div>
+      </div>
+      <div class="allText bottomText">
+        <p class="text-blk headingText">
+          Historical Theme (1500-1800 or 19th Century or Early 20th Century)
+        </p>
+        <p class="text-blk subHeadingText">
+          The 19th century witnessed significant social and technological changes
+        </p>
+        <p class="text-blk description">
+          During this time, from the Renaissance to the Industrial Revolution, society underwent profound changes.
+          Events like the French Revolution and the rise of nation-states transformed politics. Meanwhile, innovations
+          like steam power and mass production reshaped industry and daily life.</p>
+
+        <a class="explore">
+          View the Theme
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="responsive-container-block bigContainer">
+    <div class="responsive-container-block Container bottomContainer">
+      <div class="ultimateImg">
+        <img class="mainImg" src="./images/theme2.webp">
+        <div class="beigeBox">
+          <p class="beigeText">
+            This era saw a significant evolution in communication, as innovations in printing technology revolutionized
+            how information was disseminated, laying the groundwork for the media landscape of the 21st century.
+          </p>
+        </div>
+      </div>
+      <div class="allText bottomText">
+        <p class="text-blk headingText">
+          Antique Theme (Early 20th Century or Beginning of the 21st Century [Print Industry]):
+        </p>
+        <p class="text-blk subHeadingText">
+          The early 20th century marked a shift to modernity, driven by industrialization, notably in the print
+          industry.
+        </p>
+        <p class="text-blk description">
+          In this era, technological advancements, especially in printing, played a key role in shaping culture and
+          society. From the emergence of modernist literature to the rise of mass media, the print industry became
+          central to communication and cultural exchange.
+        </p>
+        <a class="explore">
+          View the Theme
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- footer -->
+
+
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <img src="./images/logo.png" alt="logo" width="100px" />
+          <h1>Evolution</h1>
+          <p>Join us as we unravel the rich
+            tapestry of cultural evolution, celebrating the triumphs, challenges, and enduring legacies that
+            define who we are and where we are headed. Evolution: where the past meets the present, and the
+            future awaits.</p>
+        </div>
+        <div class="footer__link--items">
+          <h2>Pages</h2>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#description">Description</a>
+
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Articles</h2>
+         <a href="fashion.html">Fashion</a>
+          <a href="education.html">Education</a>
+          <a href="technology.html">Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for discailmer  -->
+
+
+  <section class="modal hidden">
+    <div class="flex">
+      <img src="./images/revolution.jpg" width="50px" height="50px" alt="user" />
+      <button class="btn-close">⨉</button>
+    </div>
+    <div>
+      <h3>Stay in touch</h3>
+      <p>
+        Evolution is where we delve into history with a focus on typographical and color aesthetics. Our articles are
+        crafted with two distinct themes: the Historical Theme, reflecting typographical styles from the 16th to the
+        19th centuries, and the Antique Theme, which embraces the transition from early 20th-century print aesthetics to
+        modern color schemes.
+
+        As you explore our content, you'll notice subtle typographical changes and color palettes inspired by each
+        theme. The metadata integrated throughout our articles further enhances the visual experience, highlighting key
+        elements and providing context.
+
+        Please note that the sample websites referenced serve as resources to illustrate the evolution of typographical
+        and color trends. Their inclusion does not imply endorsement or affiliation.
+
+        Thank you for joining us on this journey through history, where typography and color bring the past to life in
+        vibrant detail.
+
+        Warm regards,
+      </p>
+    </div>
+
+    <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+    <button class="btn btn_ok">Ok</button>
+  </section>
+  <div class="overlay hidden"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>

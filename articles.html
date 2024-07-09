@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="article.css">
+  <!-- <link rel="stylesheet/less"  type="text/css" href="style.less"> -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="./images/logo.png" alt="logo" height="85%" />Evolution</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"> <a href="/" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 576 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>
+            Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+            </svg>
+            About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#description" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+            Description</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./articles.html" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z" />
+            </svg>Articles</a>
+        </li>
+        <li class="navbar__btn">
+          <!-- <button class="btn btn-open">Open Modal</button> -->
+          <a href="#disclaimer" id="sign_up_info" class="button btn btn-open">Disclaimer</a>
+        </li>
+      </ul>
+  </nav>
+  <!--  the main part -->
+
+
+
+  <div id="tabs">
+    <ul id="accordion">
+      <li>
+        <a class="active" href="#tabs-1">
+          <div class="tag">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M64 416L168.6 180.7c15.3-34.4 40.3-63.5 72-83.7l146.9-94c3-1.9 6.5-2.9 10-2.9C407.7 0 416 8.3 416 18.6v1.6c0 2.6-.5 5.1-1.4 7.5L354.8 176.9c-1.9 4.7-2.8 9.7-2.8 14.7c0 5.5 1.2 11 3.4 16.1L448 416H240.9l11.8-35.4 40.4-13.5c6.5-2.2 10.9-8.3 10.9-15.2s-4.4-13-10.9-15.2l-40.4-13.5-13.5-40.4C237 276.4 230.9 272 224 272s-13 4.4-15.2 10.9l-13.5 40.4-40.4 13.5C148.4 339 144 345.1 144 352s4.4 13 10.9 15.2l40.4 13.5L207.1 416H64zM279.6 141.5c-1.1-3.3-4.1-5.5-7.6-5.5s-6.5 2.2-7.6 5.5l-6.7 20.2-20.2 6.7c-3.3 1.1-5.5 4.1-5.5 7.6s2.2 6.5 5.5 7.6l20.2 6.7 6.7 20.2c1.1 3.3 4.1 5.5 7.6 5.5s6.5-2.2 7.6-5.5l6.7-20.2 20.2-6.7c3.3-1.1 5.5-4.1 5.5-7.6s-2.2-6.5-5.5-7.6l-20.2-6.7-6.7-20.2zM32 448H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+              </svg>
+            </div>
+            <span class="title">Fashion</span>
+          </div>
+        </a>
+        <div class="addon fadein">
+          <span>
+            Fashion has a very long history. It began somewhere around Ancient Times, and has led to important
+            inventions and evolved century after century until the present day.
+          </span>
+          <button class="main__btn"><a href="./fashion.html" style="border: 0;padding: 0;">Read More...</a></button>
+
+        </div>
+      </li>
+      <li>
+        <a href="#tabs-2">
+          <div class="tag">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" width="40" viewBox="0 0 640 512">
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+              </svg>
+              <!-- <div class="block">
+                <div class="circle"></div>
+              </div> -->
+            </div>
+            <span class="title">Education</span>
+          </div>
+        </a>
+        <div class="addon">
+          <span>
+            The explosion of technology in just the past two or three decades has not left the education sector behind.
+            With no other viable options, our education system has undergone many changes, and its teachers have …
+            adjusted.
+          </span>
+          <button class="main__btn"><a href="education.html" style="border: 0;padding: 0;">Read More...</a></button>
+
+        </div>
+      </li>
+      <li>
+        <a href="#tabs-3">
+          <div class="tag">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" width="40" viewBox="0 0 640 512">
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z" />
+              </svg>
+            </div>
+            <span class="title">Technology</span>
+          </div>
+        </a>
+        <div class="addon">
+          <span>
+            Technology has become an integral part of our lives. From smartphones to computers, these technologies have
+            become indispensable, and we heavily rely on them. In a relatively short span of time, technology has
+            rapidly advanced and now, many people cannot imagine life without it.
+          </span>
+          <button class="main__btn"><a href="technology.html" style="border: 0;padding: 0;">Read More...</a></button>
+
+        </div>
+      </li>
+    </ul>
+    <div class="browser">
+      <div class="top-bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div id="tabs-1">aewfd</div>
+      <div id="tabs-2"></div>
+      <div id="tabs-3"></div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <img src="./images/logo.png" alt="logo" width="100px" />
+          <h1>Evolution</h1>
+          <p>Join us as we unravel the rich
+            tapestry of cultural evolution, celebrating the triumphs, challenges, and enduring legacies that
+            define who we are and where we are headed. Evolution: where the past meets the present, and the
+            future awaits.</p>
+        </div>
+        <div class="footer__link--items">
+          <h2>Pages</h2>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#description">Description</a>
+          <a href="/">Disclaimer</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Articles</h2>
+         <a href="fashion.html">Fashion</a>
+          <a href="education.html">Education</a>
+          <a href="technology.html">Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for discailmer  -->
+
+
+  <section class="modal hidden">
+    <div class="flex">
+      <img src="./images/revolution.jpg" width="50px" height="50px" alt="user" />
+      <button class="btn-close">⨉</button>
+    </div>
+    <div>
+      <h3>Stay in touch</h3>
+      <p>
+        Evolution is where we delve into history with a focus on typographical and color aesthetics. Our articles are
+        crafted with two distinct themes: the Historical Theme, reflecting typographical styles from the 16th to the
+        19th centuries, and the Antique Theme, which embraces the transition from early 20th-century print aesthetics to
+        modern color schemes.
+
+        As you explore our content, you'll notice subtle typographical changes and color palettes inspired by each
+        theme. The metadata integrated throughout our articles further enhances the visual experience, highlighting key
+        elements and providing context.
+
+        Please note that the sample websites referenced serve as resources to illustrate the evolution of typographical
+        and color trends. Their inclusion does not imply endorsement or affiliation.
+
+        Thank you for joining us on this journey through history, where typography and color bring the past to life in
+        vibrant detail.
+
+        Warm regards,
+      </p>
+    </div>
+
+    <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+    <button class="btn btn_ok btn-close">Ok</button>
+  </section>
+
+  <div class="overlay hidden"></div>
+  <script src="app.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs({
+        show: { effect: "blind", direction: "right", duration: 300 }
+      });
+      $("#accordion").accordion();
+
+      var btn = $('#accordion li a');
+      var wrapper = $('#accordion li');
+
+      $(btn).on('click', function () {
+        $(btn).removeClass('active');
+        $(btn).parent().find('.addon').removeClass('fadein');
+
+        $(this).addClass('active');
+        $(this).parent().find('.addon').addClass('fadein');
+      });
+    });
+
+  </script>
+</body>
+
+</html>

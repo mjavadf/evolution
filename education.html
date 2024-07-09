@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet/less"  type="text/css" href="style.less"> -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="./images/logo.png" alt="logo" height="85%" />Evolution</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"> <a href="/" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 576 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>
+            Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+            </svg>
+            About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#description" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+            Description</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./articles.html" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z" />
+            </svg>Articles</a>
+        </li>
+        <li class="navbar__btn">
+          <!-- <button class="btn btn-open">Open Modal</button> -->
+          <a href="#disclaimer" id="sign_up_info" class="button btn btn-open">Disclaimer</a>
+        </li>
+      </ul>
+  </nav>
+  <form class="color-picker" action="">
+    <fieldset>
+      <legend class="visually-hidden">Pick a color scheme</legend>
+      <label for="light" class="visually-hidden">Light</label>
+      <input type="radio" name="theme" id="light" checked>
+  
+      <label for="pink" class="visualy-hidden">1500-1800</label>
+      <input type="radio" id="pink" name="theme">
+  
+      <label for="blue" class="visualy-hidden">Early 20th</label>
+      <input type="radio" id="blue" name="theme">
+  
+      <label for="green" class="visualy-hidden">21st</label>
+      <input type="radio" id="green" name="theme">
+  
+      <label for="dark" class="visualy-hidden">Dark theme</label>
+      <input type="radio" id="dark" name="theme">
+    </fieldset>
+  </form>
+  <div class="cs-entry__content-wrap">
+    <div class="entry-content" id="article">
+      <title>Full article: Social change, cultural evolution, weaving apprenticeship, and development: informal
+        education across three generations and 42 years in a Maya community</title>
+      <div class="hlFld-Abstract">
+        <h2 class="section-heading-2" id="abstract">Abstract</h2>
+        <p class="last">Analyzing three sets of video data collected in one Maya community, we examined apprenticeship
+          and learning of backstrap loom weaving over three generations spanning the years 1970 to 2012. Like many
+          cultural groups, the Maya of Chiapas are experiencing rapid sociodemographic shifts. Three generations of
+          girls (N = 134) were observed at their looms: in the 1970 subsistence economy; in the transition to a
+          commercial economy in the 1990s; and in 2012, when the commercial economy required formal education.
+          Multilevel models showed that intergenerational sociodemographic change - increased time in school, greater
+          involvement in the money economy, and decreased family size - changed weaving apprenticeship, which, in
+          turn, was related to changes in characteristics of learners. In 2012, weaving learners received more
+          explanations, praise, and body instruction from their teachers. Learners, in turn, asked more questions.
+          However, these changes came at a cost - the gradual loss of weaving as an everyday subsistence practice and
+          art form. Tracing intergenerational change over three generations, this study makes a unique contribution to
+          an understanding of cultural evolution.</p>
+      </div>
+      <div class="NLM_sec NLM_sec_level_1" id="S0001">
+        <h2 class="section-heading-2" id="d1e153">Introduction: the evolution of cultural transmission in a real-world
+          setting</h2>
+        <p>In this study, we use the case of the apprenticeship of Maya weaving, a central cultural practice with an
+          ancient cultural tool, the backstrap loom, to empirically examine processes of cultural change, i.e., cultural
+          evolution. Our methodology allows us to explore how ecological change produces historical change in cultural
+          transmission, specifically, the intergenerational transmission of backstrap-loom weaving. We term the
+          interactive teaching practices that produce intergenerational transmission of a skill the “proximal learning
+          environment”. Intergenerational transmission is central to cultural continuity. It is also central to cultural
+          evolution. When the interactive teaching practices central to cultural transmission change, cultural evolution
+          takes place. Our study focuses on intergenerational change in the transmission of skill with a cultural tool -
+          the backstrap loom.</p>
+        <p>The transmission of weaving know-how in three successive generational cohorts over a 42-year-period of rapid
+          ecological change in a Zinacantec Maya community in Chiapas, Mexico formed a natural experiment to elucidate
+          processes of cultural evolution through empirical study. More concretely, we explore the ways that ecological
+          change at the macro-level of the community are reflected in the sociodemographic characteristics of
+          individuals; these sociodemographic characteristics are components of the “distal learning environment”. This
+          distal learning environment is then reflected at the micro-level of the proximal learning environment, which
+          in turn influences the behavior of individual learners. The comprehensive theoretical claim of this research
+          is that (1) changes in a community ecology are reflected in shifting sociodemographic characteristics of
+          community residents. These sociodemographic characteristics constitute the distal learning environment for the
+          next generation. (2) Shifts in the distal learning environment are reflected in corresponding adaptations in
+          proximal learning environments, interactions between learner and teacher. (3) These, in turn, foster changes
+          in learner behavior, that is, altered developmental pathways. In principle, although not in detail, this
+          conception resembles Bronfenbrenner’s (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0014" href="#"
+              data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                class="off-screen">Citation</span>1977</a></span>) ecological systems theory with development affected
+          by multiple levels going from the developing child’s immediate environment outward to the broader environment.
+        </p>
+        <p>We studied the first generational cohort of Zinacantec Maya girls learning to weave in 1970 (Childs &amp;
+          Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT820268" href="#" data-behaviour="toggle-ref"
+              data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1980</a></span>); we
+          studied the second generational cohort in the early 1990s (Greenfield et al., <span
+            class="ref-lnk lazy-ref bibr"><a data-rid="CIT0006" href="#" data-behaviour="toggle-ref"
+              data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2003</a></span>). In
+          this article we introduce the third generational cohort, studied in 2012. The longitudinal study of three
+          generations of learners, all observed in the same age range, provides a unique cross-cohort comparative design
+          in comparative development. Most important to the research design of our natural experiment, each successive
+          generation grew up in a different ecology, an environment with unique sociodemographic features. Therefore, we
+          can isolate and differentiate the sociodemographic mechanisms that produced shifts in learning processes from
+          Generation 1 to Generation 2 and from Generation 2 to Generation 3. By tracing intergenerational change in a
+          key practice of cultural transmission in three different ecologies, over such an extended time span, we are in
+          the position of making a unique contribution to a data-based understanding of cultural evolution.</p>
+        <p>Cross-sectional designs comparing different participants in different ecologies have provided valuable
+          information suggesting behavioral effects of social change in Maya communities in Chiapas, Mexico
+          (Esteban-Guitart et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0025" href="#"
+              data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                class="off-screen">Citation</span>2018</a></span>; Manago, <span class="ref-lnk lazy-ref bibr"><a
+              data-rid="CIT0048" href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                class="off-screen">Citation</span>2014</a></span>). Our approach has been the longitudinal study of a
+          single village (Greenfield et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0006" href="#"
+              data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                class="off-screen">Citation</span>2003</a></span>; Maynard et al., <span
+            class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#" data-behaviour="toggle-ref"
+              data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2015</a></span>); this
+          is a more direct design for studying the effects of social change on culture and human development
+          (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0033" href="#" data-behaviour="toggle-ref"
+              data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2018</a></span>). A
+          longitudinal research design allows the empirical study of cultural evolution, an intrinsically longitudinal
+          process, in a way that cross-sectional designs do not.</p>
+        <div class="NLM_sec NLM_sec_level_2" id="S0001-S2001">
+          <h3 class="section-heading-3" id="d1e186">Social change from Gemeinschaft to Gesellschaft: Implications for
+            cultural transmission</h3>
+          <p>Like many cultural groups, the Maya of Chiapas are experiencing rapid socio-economic and demographic shifts
+            in the context of globalization. These macro-level shifts involve a number of interrelated and synergistic
+            shifts: the development of a commercial economy, urbanization, the expansion of formal education, and the
+            augmented use of technology. We summarize this suite of interrelated characteristics with Tönnies’ (1957)
+            term <i>Gesellschaft.</i> In all of these areas, the Zinacantec Maya community of Nabenchauk has moved in
+            the Gesellschaft direction from a relatively isolated community based on subsistence activities such as corn
+            agriculture and weaving. Using Tönnies’ term, we summarize these interrelated characteristics with the term
+            <i>Gemeinschaft</i>.
+          </p>
+          <p>Another characteristic not mentioned by Tönnies, but that is part of a subsistence agricultural economy, is
+            large family size (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0033" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2018</a></span>). In a Gemeinschaft ecology, more children are
+            adaptive because families need their assistance in subsistence tasks (Kagitcibasi &amp; Ataca, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0040" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2005</a></span>;
+            Lancy, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0042" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2012</a></span>). In
+            contrast, smaller families are adaptive in <i>Gesellschaft</i> environments where children cost money
+            (Greenfield, 2004).</p>
+          <p>Besides large family size, Gemeinschaft ecologies have relatively high infant and child mortality rates,
+            whereas Gesellschaft ecologies have relatively low infant and child mortality rates. This is in part because
+            of technological developments, notably medical care and a supply of purified water. In the current article
+            we document intergenerational reductions in family size and infant/child mortality as part of Nabenchauk’s
+            transition to a more Gesellschaft ecology. As will be seen, smaller families are an element of the distal
+            learning environment that has implications for the intergenerational transmission of backstrap-loom weaving.
+          </p>
+          <p>In the present study, we will assess how each of these community-level shifts in the Gesellschaft direction
+            plays out in our three cohorts of participants, studied over a period of 42 years. We will also test their
+            predicted interrelationship through correlational analysis. Interrelated ecological conditions produce what
+            Rogoff and colleagues call “constellations of cultural practices” (Rogoff et&nbsp;al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0060" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2014</a></span>).
+          </p>
+          <p>The comprehensive theoretical claim of this research is that interrelated changes in a community’s
+            sociodemographic characteristics, the distal learning environment, will lead to corresponding adaptations in
+            proximal learning environments, the cultural practice of teaching girls how to weave on a backstrap loom.
+            Altered teaching practices will, in turn, foster altered developmental pathways, shifts in learner behavior.
+            An important implication is that learning environments are adapted to shifting macro conditions.</p>
+          <p>In our study of the first two generations, we documented the influence of the economic transition from
+            subsistence to commerce on the intergenerational transmission of backstrap-loom weaving in the Zinacantec
+            Maya community of Nabenchauk. Those generations spanned the period from 1970 to 1993 (Greenfield et al.,
+            <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0006" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2003</a></span>). We
+            found that the main effect of participating in a commercial economy on the cultural transmission of
+            backstrap-loom weaving was to make the learning process a more independent one, as working mothers were
+            unavailable to help daughters.
+          </p>
+          <p class="last">The current article adds the study of weaving apprenticeship in the third generation, 21 years
+            later. This is a longitudinal study of a community. By adding the study of weaving apprenticeship in the
+            third generation, 21 years later, we extend the longitudinal reach of our community study of the evolution
+            of cultural transmission, and we explore the role of two new ecological factors: first, the expansion of
+            educational opportunity to high school and almost universal primary education; second, the introduction of
+            the cell phone.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0001-S2002">
+          <h3 class="section-heading-3" id="d1e223">Expansion of formal education and the introduction of cell service
+          </h3>
+          <p>Nabenchauk added remote junior high school education (<i>telesecundaria</i>) to elementary school between
+            data collection for Generations 1 and 2. Between data collection for Generations 2 and 3, two high schools
+            were established in neighboring Zinacantec communities (Manago, <span class="ref-lnk lazy-ref bibr"><a
+                data-rid="CIT0049" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                data-label="reference"><span class="off-screen">Citation</span>2015</a></span>). In that same period, a
+            federal program called Oportunidades began paying poor Zinacantec families 1500 pesos (US$130) every two
+            months for each child in high school and 800 pesos (US$70) for each child in junior high school (Manago,
+            <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0049" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2015</a></span>).
+            Thus for Generation 3, secondary education through high school became possible. Most important, elementary
+            school graduation became normative for girls for the first time.
+          </p>
+          <p class="last">How does this influence work in concert with another new Gesellschaft factor, mobile
+            technology, to produce change in the informal educational process of learning to weave? By 2012, the year we
+            collected third-generation data, cell service was newly available in the county seat of Zinacantan Center
+            (Manago &amp; Pacheco, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0050" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2019</a></span>), the neighboring colonial city of San Cristobal,
+            and other cities in Chiapas where residents of Nabenchauk bought and sold commodities (Greenfield et al.,
+            <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0031" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2009</a></span>).
+            Does more extended school experience, in combination with mobile technologies, alter or undercut the
+            transmission of weaving to the next generation? These were central questions for our study.
+          </p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0001-S2003">
+          <h3 class="section-heading-3" id="d1e244">Intergenerational shifts in teacher behavior: The evolution of
+            cultural transmission in the proximal learning environment</h3>
+          <p>Intergenerational transmission takes place at the level of the proximal learning environment. In this
+            study, the proximal learning environment consists of practices used to teach backstrap-loom weaving.
+            Cultural transmission and the role of teaching is a major focus in the study of cultural evolution (e.g.,
+            Csibra &amp; Gergely, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0022" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2011</a></span>). Our unique contribution is to document, through
+            behavioral study in the field, how a culturally central practice of teaching has shifted with ecological
+            change. More specifically, we examine, by means of video recordings, the proximal learning environment for
+            the acquisition of skill in backstrap-loom weaving, the traditional skill involving the most complex female
+            learning. The next sections discuss elements of the proximal learning environment that are applicable to
+            weaving apprenticeship.</p>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2003-S3001">
+            <h4 class="section-heading-4" id="d1e251">Praise and criticism</h4>
+            <p>Whiting and Whiting (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0066" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>1975</a></span>) were the first to point out that “the performance
+              of economic tasks and domestic chores that contribute to family welfare are…intrinsically rewarding”
+              (p.179). Coppens and Alcalá (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0019" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2015</a></span>) have extended this analysis, pointing out that
+              children are eager to “pitch in” to contribute to family endeavors. Under these circumstances, children do
+              not require extrinsic reinforcement in the form of praise. At the time our first generation learned to
+              weave, weaving clothes for self and family was a crucial survival skill and therefore intrinsically
+              rewarding. In line with the Whitings’ observation and the analysis of Coppens and Alcalá, there were
+              extremely few instances of teacher praise for our first-generation sample of 14 learners (Childs &amp;
+              Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT820268" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>1980</a></span>).</p>
+            <p>Alcalá et&nbsp;al. (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0002" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2014</a></span>) point out that, in indigenous populations of
+              Mexico and Central America, children voluntarily “pitch in” with family and household tasks. However, in
+              wealthier and more highly educated Mexican families, children are more often extrinsically reinforced for
+              doing chores. As the education level rose across the generations and as store-bought clothing increased,
+              making weaving a less important contribution to basic subsistence, we predicted that praise, a form of
+              extrinsic reinforcement, would increase as a component of the proximal learning environment for weaving
+              apprenticeship.</p>
+            <p>Indeed, praise is useful to recognize outstanding work or effort, important in an individualistic value
+              context (Greenfield et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0034" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2000</a></span>). In China, the intergenerational rise in levels
+              of formal education and other features of a Gesellschaft ecology were associated with a perception that
+              the current generation of mothers praised their children more than the prior two generations (Zhou et al.,
+              <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0033" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2017</a></span>).
+              We expected the same intergenerational trend toward more learner praise as the Zinacantec ecology moved in
+              the Gesellschaft direction over two generations - with an increasingly commercial economy and, in
+              Generation 3, much expanded formal education.
+            </p>
+            <p class="last">In contrast with praise, criticism functions to bring everyone up to a normative standard,
+              which is functional in a collectivistic culture adapted to a Gemeinschaft environment. Indeed, at the time
+              of Generation 1, critical or disparaging statements concerning a weaving learner’s skill were much more
+              frequent than instances of praise. As individualistic values rose in China, in concert with increased
+              education and economic development, grandmothers judged that parents of the current generation of young
+              children were criticizing their children less than the previous two generations of parents (Zhou
+              et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0069" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2017</a></span>). Because of parallel social trends in Nabenchauk,
+              we expected the ratio of praise to criticism to rise in weaving apprenticeship across the three
+              generations in our study.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2003-S3002">
+            <h4 class="section-heading-4" id="d1e282">Bodily instruction</h4>
+            <p>In a prior study in the same community, we demonstrated that “with respect to the body techniques of
+              weaving,…there are two kinds of learners: native and non-native. The native learner is endowed from birth
+              with [cultural experiences] that aid in furthering the use of various body techniques in weaving. The
+              non-native learner is at a disadvantage in this realm and needs more extensive instruction in learning to
+              position and use the body at each step of the process” (Maynard et al., <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0004" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1999</a></span>,
+              p. 383). We found that cultural practices shared by Zinacantec adults and young girls, such as kneeling to
+              pat tortillas or balancing a tumpline to carry wood, provided bodily skills—to the point that Zinacantec
+              girls in the first two generations needed very little instruction in body techniques when learning to
+              weave (Maynard et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0004" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>1999</a></span>; Greenfield, <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2004</a></span>).
+            </p>
+            <p class="last">In sharp contrast, one of the authors, who had not had this prior bodily experience needed a
+              lot of instruction about body technique from her Zinacantec weaving teacher—and such instruction, in the
+              form of both verbalization and bodily manipulation, was spontaneously provided. In the third generation,
+              the cultural practices that prepared bodies to weave at a backstrap loom had disappeared as commerce
+              replaced subsistence in the economic environment. At the time the data were collected on the third
+              generation, girls and women sat on chairs rather than kneeling on the ground; and charcoal stoves had
+              replaced wood fires for heating and cooking. Without this bodily preparation, we thought that, like the
+              author, Zincantec girls would require and receive extensive body instruction, both verbal and nonverbal.
+              We also realized that girls attending school would need more help in the weaving process, particularly the
+              bodily postures and movements, because, most likely, girls observed in 2012 had been too busy with school
+              to learn to weave.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2003-S3003">
+            <h4 class="section-heading-4" id="d1e296">Teacher explanation</h4>
+            <p class="last">Teacher explanation is very important in formal education (e.g., Geelan, <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0029" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2020</a></span> at
+              the high school level; Penno et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0057"
+                  href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2002</a></span> at the elementary school level). Among the Kpelle
+              in Liberia, formal education was the only influence that developed children’s explanatory skills in
+              cognitive experiments (Cole &amp; Scribner, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0018"
+                  href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>1974</a></span>). Hence, we thought that as weaving teachers
+              acquired more formal education, the frequency of explanation in weaving apprenticeship would increase.</p>
+          </div>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0001-S2004">
+          <h3 class="section-heading-3" id="d1e309">The evolution of the distal learning environment: Sociodemographic
+            shifts</h3>
+          <p>Many ecological or sociodemographic shifts are outside the direct transmission situation. They reflect
+            community change but are not part of teaching and learning how to weave. These ecological shifts constitute
+            the evolution of the distal learning environment and are, in our theoretical conception, the motor of
+            cultural evolution. Our ethnographic observations indicated the evolution of the distal learning environment
+            through the following five sociodemographic shifts:</p>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2004-S3001">
+            <h4 class="section-heading-4" id="d1e312">(1) Girls’ schooling</h4>
+            <p class="last">We already knew that children’s schooling had increased across the three generations
+              (Maynard et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2015</a></span>). Our ethnographic observations indicated that
+              girls were now as frequently going to school as boys.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2004-S3002">
+            <h4 class="section-heading-4" id="d1e319">(2) Mothers’ schooling</h4>
+            <p class="last">Ethnographic observations also had revealed that there were women in the community who had
+              been to school.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2004-S3003">
+            <h4 class="section-heading-4" id="d1e322">(3) Commercial activity</h4>
+            <p class="last">We already knew that family involvement in commercial activity, as both consumers and
+              merchants, had increased in each generation (Maynard et al., <span class="ref-lnk lazy-ref bibr"><a
+                  data-rid="CIT0011" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                  data-label="reference"><span class="off-screen">Citation</span>2015</a></span>).</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2004-S3004">
+            <h4 class="section-heading-4" id="d1e329">(4) Family size and (5) mobile technologies</h4>
+            <p>Our ethnographic work had indicated that as money and commerce became the economic basis of the community
+              and agriculture declined, children were seen as costing money rather than contributing labor. Starting
+              with mothers of the second generation there was therefore interest in birth control (Greenfield, <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2004</a></span>).
+              Also relevant to family size, our ethnographic observations in Nabenchauk had indicated big uptake of cell
+              phones by young people, as well as by those involved in buying and/or selling vegetables and flowers in
+              different communities.</p>
+            <p class="last">Smaller family size and mobile technologies are related to Gesellschaft conditions that
+              extend social networks beyond the family (Manago &amp; Pacheco, <span class="ref-lnk lazy-ref bibr"><a
+                  data-rid="CIT0050" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                  data-label="reference"><span class="off-screen">Citation</span>2019</a></span>; Newson &amp;
+              Richerson, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0054" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2009</a></span>).
+              Fewer kin-centered social networks are related to lower birthrates (Newson et&nbsp;al., <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0053" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2005</a></span>).
+              Smaller family size reduces the need for sibling caregiving and is one reason more girls, especially
+              first-born daughters, are attending school (Greenfield et al., <span class="ref-lnk lazy-ref bibr"><a
+                  data-rid="CIT0031" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                  data-label="reference"><span class="off-screen">Citation</span>2009</a></span>). These factors then
+              were seen as part of the distal learning environment which led to girls focusing their education on school
+              rather than weaving.</p>
+          </div>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0001-S2005">
+          <h3 class="section-heading-3" id="d1e350">Intergenerational shifts in learner behavior: the evolution of
+            cultural transmission from the learner's perspective</h3>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2005-S3001">
+            <h4 class="section-heading-4" id="d1e352">Weaving expertise</h4>
+            <p class="last">As an indicator of individual development adapted to a Gemeinschaft ecology, we used the
+              learner variable of weaving expertise - the ability to weave increasingly difficult items. Because
+              completing elementary school had become normative in the third generation, we expected weaving expertise
+              to decrease for lack of time. Another factor that would also produce a decrease in weaving expertise was
+              that selling one’s weaving was not as profitable as engaging in other types of commercial activity. An
+              important difference between learning to weave and going to school is that the former takes place at home,
+              whereas the latter takes place in a specialized location away from the home and family.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0001-S2005-S3002">
+            <h4 class="section-heading-4" id="d1e355">Question asking</h4>
+            <p class="last">As an indicator of individual development adapted to a Gesellschaft ecology, we used the
+              learner variable of question-asking during weaving apprenticeship. On the level of learner behavior,
+              question-asking is relevant to both weaving apprenticeship and school. Children’s question-asking is
+              highly valued in school situations (Ronfard et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a
+                  data-rid="CIT0061" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                  data-label="reference"><span class="off-screen">Citation</span>2018</a></span>). However, it can be
+              considered a mark of disrespect in more Gemeinschaft communities, such as immigrant agricultural workers
+              in California (Delgado-Gaitan, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0023" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>1994</a></span>). In communities in which carrying out useful
+              subsistence tasks is the emphasis—what Lancy (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0042"
+                  href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2012</a></span>) calls the “chore curriculum” - responding to
+              adults with action rather than words is valued. In the first generation of weaving learners, the learners
+              asked no questions; instead, they focused on carrying out actions their weaving teachers suggested to them
+              in the imperative mode. However, we thought that, as girls and their mothers acquired more school
+              education across the generations, the influence of formal education might carry over to informal weaving
+              education. The third generation was the first one in which graduating from elementary school was normative
+              for girls (Maynard et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2015</a></span>). Hence, question-asking during weaving
+              apprenticeship was a cognitive behavior in which we thought that formal education would have a spillover
+              effect on informal education, leading to an important behavioral difference between Generation 2 and
+              Generation 3.</p>
+          </div>
+        </div>
+      </div>
+      <div class="NLM_sec NLM_sec_level_1" id="S0002">
+        <h2 class="section-heading-2" id="d1e371">Hypotheses</h2>
+        <div class="NLM_sec NLM_sec_level_2" id="S0002-S2001">
+          <h3 class="section-heading-3" id="d1e373">Synergy in the distal and proximal learning environments</h3>
+          <p>The theory of social change, culture, and human development (Greenfield, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0031" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2009</a></span>)
+            posits that, at each level of the theory, variables operate synergistically rather than independently. Hence
+            we expected intercorrelated variables at both the macro and micro environmental levels.</p>
+          <p><b>1. Sociodemographic components of the distal (macro) learning environment will show positive
+              intercorrelations among family involvement in commercial activities, use of mobile technologies, learner’s
+              schooling, and mother’s schooling, as well as negative correlations with family size.</b></p>
+          <p class="last"><b>2. Components of the proximal (micro) learning environment will show positive
+              intercorrelations among body instruction, teacher explanations, and teacher praise</b></p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="">
+          <h3 class="section-heading-3" id="d1e384">Ecological changes on the macro-level: The distal learning
+            environment</h3>
+          <p>We tested several hypotheses about sociodemographic shifts across the three generations. These shifts were
+            thought to reflect ecological changes in the community as a whole.</p>
+          <p><b>3. Girls’ schooling will increase significantly over the three generations.</b> We had already
+            demonstrated an increase in schooling across the three generations in the group consisting of both boys and
+            girls (Maynard, Greenfield, &amp; Childs, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2015</a></span>). Because completing elementary school had become
+            normative for girls for the first time in Generation 3, we expected girls' schooling to be consistent with
+            this overall pattern and increase across the three generations.</p>
+          <p><b>4. Mothers’ schooling will increase significantly over the three generations.</b> Because many of the
+            children of one generation became the parents of the next generation, we also expected mothers’ schooling to
+            increase across the generations. Research by Laosa (<span class="ref-lnk lazy-ref bibr"><a
+                data-rid="CIT0044" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                data-label="reference"><span class="off-screen">Citation</span>1978</a></span>), Chavajay and Rogoff
+            (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0016" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2002</a></span>),
+            Chavajay (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0015" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2006</a></span>),
+            and LeVine et al. (<span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0046" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2012</a></span>) had all shown that maternal education influences
+            how mothers organize children’s informal learning activities out of school. Hence, the historical increase
+            in maternal schooling became a component of our integrated model, linking shifts in distal learning
+            environment to the proximal learning environment of weaving apprenticeship.</p>
+          <p><b>5. Family commerce will increase significantly over the three generations.</b> We predicted that family
+            commerce would increase over the three generations. Because commercial activity was facilitated by an
+            elementary school education that allowed bookkeeping (Greenfield et al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0031" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2009</a></span>), we
+            considered commerce to work synergistically with schooling as factors that could shift the proximal learning
+            environment of weaving apprenticeship.</p>
+          <p><b>6. Textile commerce, which had increased from Generation 1 to Generation 2, would decrease in Generation
+              3.</b> We already knew that textile commerce carried out by mothers and daughters had increased from
+            Generation 1 to Generation 2. However, the foundation for all aspects of textile commerce was weaving and
+            embroidering items to be sold. As schooling began to replace weaving and embroidery in the lives of
+            Zinacantec girls in Nabenchauk, there was reason to believe that textile commerce would decrease in
+            Generation 3.</p>
+          <p><b>7. Family size will decrease over the three generations.</b> A declining birthrate would be in line with
+            the concept of the demographic transition (Coale, 1989), a decrease in family size that occurs around the
+            world when environments move from traditional to modern, in other words, move in the Gesellschaft direction.
+            As will be seen, smaller families are an element of the distal learning environment that has implications
+            for the intergenerational transmission of backstrap-loom weaving.</p>
+          <p><b>8. In the third generation, mobile technologies will be used.</b> We included the use of mobile
+            technology in our model of the distal learning environment, described later.</p>
+          <p class="last"><b>9. Infant and child mortality will decrease over the three generations.</b> Our
+            ethnographic observations indicated that residents in 2012 were making much greater use of medical
+            facilities, both medical clinics and pharmacies, than had been the case for prior generations. In addition,
+            purified water had become widely available in 2012 in the form of bottled water available for purchase in
+            the village. Clean water had not been readily available at the time we studied Generations 1 and 2. These
+            shifts were elements in the transition to a more Gesellschaft ecology.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0003">
+          <h3 class="section-heading-3" id="d1e426">Shifts in the intergenerational transmission of weaving: The
+            proximal learning environment</h3>
+          <p>The proximal learning environment for weaving consisted of the interactive processes shown in video
+            recordings of girls learning to weave at home, i.e., the processes of weaving apprenticeship. Based on
+            ethnographically observed changes in the distal learning environment, we tested the following hypotheses:
+          </p>
+          <p><b>10. Girls will require and receive more instruction in body postures and movements in Generation 3</b>.
+            The reason for this hypothesis was the decline in Generation 3 of subsistence activities such as kneeling to
+            make tortillas that provided practice in the bodily positions and movements required to weave at a backstrap
+            loom (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2004</a></span>). Furthermore, we hypothesized that schooling, which
+            greatly reduces time available for subsistence tasks, would be related to the need for instruction in body
+            postures.</p>
+          <p><b>11. Praise by weaving teachers will increase across the generations, as will the ratio of praise to
+              criticism.</b> As in our prior research on social change, we use the term praise to mean verbal approval
+            of behavior and the term criticism to mean negative appraisals of behavior (Zhou et&nbsp;al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0069" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2017</a></span>). In
+            our study of the first generation of weaving apprenticeship in Nabenchauk, we labeled these two concepts as
+            positive and negative reinforcement (Childs &amp; Greenfield, <span class="ref-lnk lazy-ref bibr"><a
+                data-rid="CIT820268" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                data-label="reference"><span class="off-screen">Citation</span>1980</a></span>). When an ecology moves
+            from subsistence to commerce and formal education expands, as has occurred over recent generations in China,
+            praise of children, a promotion strategy, is an aspect of the learning environment that increases while the
+            frequency of criticism, a prevention strategy, declines (Higgins, <span class="ref-lnk lazy-ref bibr"><a
+                data-rid="CIT0038" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                data-label="reference"><span class="off-screen">Citation</span>1998</a></span>; Zhou et al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0069" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2018</a></span>).
+            Because these ecological shifts have also occurred in Nabenchauk, we thought that this shift could be
+            applicable to intergenerational shifts in weaving instruction in Nabenchauk—where, in the first generation,
+            there had been a number of instances of criticism, but almost no instances of praise (Childs &amp;
+            Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT820268" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1980</a></span>).
+          </p>
+          <p class="last"><b>12. Explanations by weaving teachers will increase across the generations.</b> This
+            hypothesis was based on the importance of explanation in formal education, as described in the Introduction.
+            It was also based on the idea and findings that the teaching techniques experienced in formal education
+            transfer into informal education (Chavajay, 2006; Chavajay &amp; Rogoff, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0016" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2002</a></span>;
+            Laosa, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0044" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1978</a></span>).
+          </p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0004">
+          <h3 class="section-heading-3" id="d1e462">Learner change</h3>
+          <p><b>13. Weaving expertise will decline in the current generation.</b> From Generation 1 to Generation 2,
+            weaving skills and woven items expanded as textile creation became the first income-producing activity for
+            Zinacantec females (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2004</a></span>). However, as the commercial ecology developed
+            further between Generation 2 and Generation 3, weaving became less important, while schooling, directly
+            related to the language and math skills needed for commercial transactions, became more important. Because
+            our weaving scale focused on subsistence items that did not require the new skills, a reasonable expectation
+            was that weaving expertise would remain constant from Generation 1 to Generation 2, but decrease from
+            Generation 2 to Generation 3.</p>
+          <p><b>14. Because schooling would compete with weaving, we predicted an inverse relationship between weaving
+              expertise and school experience.</b> In other words, girls would be weaving less because they were
+            attending school more. Prior research was in line with this prediction. Indeed, in Mitontik, another Maya
+            community in Highland Chiapas, universal schooling led to the almost complete disappearance of weaving
+            apprenticeship (Zambrano, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0067" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2000</a></span>). One reason for this inverse relationship between
+            home-based weaving apprenticeship and school-based formal education is that “Schooling tends to withdraw
+            people from their normal life and activities and locate them in specially designed institutions” (Obidi,
+            <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0056" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1995</a></span>, p.
+            372). With increased school experience, members of an indigenous community in Michoacan, Mexico have come to
+            value physical work less and academic work more than less schooled community members of the past
+            (Correa-Chávez et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0021" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2016</a></span>).
+          </p>
+          <p class="last"><b>15. We predicted an increase in a trait adaptive in school: Asking questions.</b> Asking
+            questions is an important skill in maximizing school-based learning (Marx et&nbsp;al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0051" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1999</a></span>),
+            and fewer questions are asked by students coming from a more tradition-oriented culture (e.g., Dkeidek
+            et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0024" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2011</a></span>). In
+            cultures organized around vertical collectivism (i.e., social hierarchy), such as that of Mexican immigrants
+            to the United States or people of sub-Saharan Africa, children’s questions can be seen in a negative light,
+            as challenging parental authority (Delgado-Gaitan, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0023"
+                href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>1994</a></span>; Gauvain et&nbsp;al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0028" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2013</a></span>;
+            LeVine, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0045" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1973</a></span>). In
+            pottery production, cross-cultural comparison within sub-Saharan Africa revealed a link between learner
+            questioning, innovative designs, and commercial markets for the products (Wallaert-Pêtre, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0063" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2001</a></span>).
+            The Zinacantecs had moved away from tradition and toward innovation in their textile designs; parental
+            authority had lessened as commercial activity had developed; and school-based education had increased across
+            the generations (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2004</a></span>; Maynard &amp; Greenfield, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT1043" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2008</a></span>;
+            Maynard et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2015</a></span>). We therefore thought that questions during weaving
+            apprenticeship would increase across the generations.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="">
+          <h3 class="section-heading-3" id="d1e513">Multilevel model</h3>
+          <p class="last"><b>16. Integrated model of changes in the distal learning environment, proximal learning
+              environment, and learner behavior.</b> We hypothesized that increased commercial activity, increased
+            schooling of both the learner and her mother, and smaller family size across the three generations,
+            augmented by the introduction of mobile technology in Generation 3, would alter the nature of the proximal
+            learning environment for weaving apprenticeship: Girls would have greater need for and therefore receive
+            more bodily instruction; teachers would use both explanations and praise more frequently as instructional
+            techniques. These intergenerational shifts in the process of learning to weave would then be associated both
+            with expansion of a learner behavior valued in school - asking questions - and the decline of weaving
+            expertise so important in the subsistence ecology of traditional Maya culture.</p>
+        </div>
+      </div>
+      <div class="NLM_sec NLM_sec_level_1" id="S0005">
+        <h2 class="section-heading-2" id="d1e518">Method</h2>
+        <div class="NLM_sec NLM_sec_level_2" id="S0005-S2001">
+          <h3 class="section-heading-3" id="d1e520">Participants</h3>
+          <p>The study community was Nabenchauk, a Zinacantec Maya community in Highland Chiapas. The state of Chiapas,
+            the most southernmost state in Mexico, is distinguished by being majority Maya. The community is connected
+            to the colonial city of San Cristobal de Las Casas by the Pan American Highway. It is currently about a
+            45-minute drive from Nabenchauk to San Cristobal.</p>
+          <p>Participants were 134 girls and their weaving teachers (mothers, grandmothers, aunts, cousins, and sisters)
+            in three generations. They came from 80 nuclear families; all had homes in Nabenchauk. In the first
+            generation, studied in 1969 and 1970, Nabenchauk, population about 1500, was a mainly subsistence ecology,
+            with corn grown for both home consumption and sale. Most clothing was woven by female members of the
+            community. One-room houses were built by community members. In the second generation, studied in 1991 and
+            1993, the economy had made a major shift toward a commercial ecology; its population had grown to about
+            3,000. The advent of NAFTA on January 1, 1994 flooded Mexico with cheap corn and almost immediately
+            eliminated the growing of corn, thus accelerating the transition to an economy based on money and commerce.
+            By the time of the third generation, studied in 2012, formal education for indigenous children had been
+            greatly expanded and families were paid on a monthly basis to keep their children in school. By 2012,
+            Nabenchauk’s population had again grown, reaching about 4500 inhabitants (Maynard et al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2015</a></span>).
+          </p>
+          <p>Our focus is learning how to weave on a backstrap loom. Weaving apprenticeship was carried out at home and
+            was done exclusively by female members of the community. The backstrap loom and the learning context are
+            shown in two photographs later in this article (<button class="ref show-table-fig-ref" data-id="F0001"
+              data-behaviour="show-popup" data-popup-event-type="fig">Figure 1</button>). Our participants included 14
+            girls in Generation 1, 58 girls in Generation 2, and 62 girls in Generation 3. Participants in Generations 2
+            and 3 were descendants of earlier generations (typically a daughter, granddaughter, or niece of an earlier
+            participant). The girls ranged in age from 3 to 22 years. The mean age across the generations was
+            11.47 years; there was no significant difference in the mean age among the generations (F (2, 131) = 1.521,
+            <i>p</i> = .222). The mean age in Generation 1 was 10.78; for Generation 2, mean age was 12.18 years; for
+            Generation 3 mean age was 10.95 years. The first generation was studied in 1970, the second generation in
+            1991 (almost all) or 1993, and the third generation in 2012. (The 1993 participants were a few girls judged
+            by their mothers too young to weave in 1991.) The girls in each generation ranged from first-time weaver to
+            expert.
+          </p>
+          <p>Weaving teachers and helpers also participated in the videotaped sessions on the backstrap loom. Helpers
+            differed from teachers in that they were younger than the weaving learner and, in contrast to the teachers,
+            did not know how to weave themselves. In a total of 26 cases across all three cohorts, there was no teacher
+            or helper; the weaver wove independently. In 17 of these 26 cases the weaver was already an expert weaver so
+            clearly did not need a teacher or helper. Weaving expertise was assessed by asking whether the girls had
+            ever woven five different items of varying difficulty. An expert weaver was defined as someone who had woven
+            all or most of these items, including one or two of the most difficult items (<i>pok mochebal</i> shawl,
+            skirt).</p>
+          <p>For the remaining 108 girls, each girl’s mother was included as a teacher in 66% of the cases. Most
+            frequently the mother was the sole teacher/helper. But sometimes another member of the family, most
+            frequently a teenage daughter, also participated as a teacher or helper. In 13% of the 108 cases, a teenage
+            girl served as the sole weaving teacher or helper. Our findings from Generation 1 and Generation 2 indicated
+            that an increase in teenage teachers in Generation 2 was associated with the creation of innovative textile
+            designs (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2004</a></span>). Only in the last generation (videotaped in 2012)
+            did a few grandmothers (N = 4) serve as the sole weaving teacher for their granddaughters. We think that
+            this is because mothers in that generation were too busy with their commercial activities to either weave or
+            help their daughters learn to weave.</p>
+          <p class="last">Family tree cards made by the third author in 1969 and 1970 (and continued by all authors at
+            later time points) made it possible for us to locate the descendants of earlier participants when we
+            returned to the field for research in 1991, 1993, and 2012. Most were living in Nabenchauk; a few visited
+            Nabenchauk on the weekends, where they still had a house and could participate in our study. All the direct
+            descendants of the earlier generations who were old enough to weave agreed to participate.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0005-S2002">
+          <h3 class="section-heading-3" id="d1e547">Connecting to the community</h3>
+          <p>Two of the authors started out as members of the Harvard Chiapas Project, a National Science Foundation
+            funded project to give Radcliffe and Harvard students field experience in Chiapas. The project was led by
+            Harvard Anthropology Department Professor, the late Evon Vogt. When Greenfield and Childs started
+            collaborating on research in Nabenchauk, Childs had already participated in the Harvard Chiapas Project a
+            summer earlier and spoke fluent Tzotzil. All members of the Harvard Chiapas Project were given Tzotzil
+            instruction before leaving for Chiapas.</p>
+          <p>A senior member of the Harvard Chiapas Project picked out our local assistant, Xun Pavlu, because he had an
+            unusually large network of family and co-godparents (<i>comadres</i> and <i>compadres</i>); this
+            anthropologist knew that our research required larger samples than the more ethnographic research that other
+            members of the Harvard Chiapas Project were doing.</p>
+          <p>When we returned to study the second generation after 21 years, Xun Pavlu again assisted us in the
+            research; again his main role was participant recruitment and accompanying us to the homes where we made our
+            videotapes of girls at different stages of learning to weave. This time though, because our
+            intergenerational comparison required us to recruit descendants of the prior generation, we used the family
+            tree cards made by the third author to direct Xun’s recruitment efforts to particular girls, descendants or
+            godchildren of our original participants. Maynard joined the research in the data analysis phase after two
+            generations of data had been collected; she is also a fluent Tzotzil speaker. Greenfield is less fluent, but
+            can use Tzotzil for daily life. Authors Maynard, Greenfield, and Childs also speak Spanish, which was
+            especially useful in the neighboring city of San Cristobal, where they each spent almost all of their
+            nights. Maynard and Childs learned how to weave on a backstrap loom, which enabled them to code the video
+            data of girls learning to weave.</p>
+          <p class="last">By the time of our third-generation data collection in 2012, Xun Pavlu had died and one of his
+            daughters-in-law, Maruch Ch’entik took over his role of participant recruitment. Maynard took the lead in
+            collecting the 2012 video data of the third generation learning to weave. Our relationships with two
+            extended families, who helped us beyond simply being participants, established bonds that were cemented when
+            we became co-godparents. Because the limit of girls’ formal education in the community was 7<sup>th</sup>
+            grade, and even that was a rare accomplishment, community members could not serve as research assistants or
+            be consulted about research design in the way they would be in the United States. However, three generations
+            of Xun Pavlu’s family have provided input and pilot data for all research procedures.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0005-S2003">
+          <h3 class="section-heading-3" id="d1e563">Procedure</h3>
+          <p>We used video and interview data that we had collected in 1970 and the early 1990s for the first two
+            generations. The interview data for the first two generations had already been entered into a master SPSS
+            database, to which the 2012 data (see below for procedure) were added. The videos of weaving apprenticeship
+            for the first two generations, plus the new videos from the third generation, were coded for the variables
+            of interest in this study, as elaborated below.</p>
+          <p>For the 2012 participants, we obtained informed consent from a parent and assent from minors, as approved
+            by the University of Hawaìi Institutional Review Board Approval #CHS 20233 and the UCLA Institutional Review
+            Board Approval #12-001084. For each generation, we videotaped a session of the girl weaving or learning to
+            weave. Procedures approved by UCLA's IRB were also in place at the time the Generation 2 data were
+            collected. IRBs did not exist at the time the Generation 1 data were collected.</p>
+          <p>Recordings were made in the family courtyard, or occasionally in the home, if it was raining. Our local
+            assistant, the late Xun Pavlu, introduced us to the families and accompanied us to almost all recording
+            sessions. When setting up appointments, Xun told the prospective participants that we were interested in
+            watching girls learn to weave. It was completely up to the participant and her family whether or not a
+            teacher would also be involved and, if so, who the teacher would be. Video recordings of these weaving
+            sessions were the source of our information about the proximal learning environment for weaving
+            apprenticeship and about learner behavior in the apprenticeship process.</p>
+          <p>We used recording equipment that was available in each time period. In 1970, we used the first Sony
+            portable black-and-white reel-to-reel video recorder. In 1991 and 1993, we used a Sony Hi-8 color video
+            recorder. In 2012, we used a Canon HD color video recorder. For the first generation, we used an external
+            microphone set up under the loom. In 1991, 1993, and 2012, we used radio lavalier microphones worn by the
+            weaving learner and her teacher or helper, if there was one. All sessions were recorded in Tzotzil, the
+            native language of the participants and the language of the research team’s interactions with participants.
+            For all cohorts, participants were given a photograph of themselves and a small payment for their time. For
+            the second generation, we experimented with giving them a recording of themselves weaving; however, monetary
+            payment was preferred, so monetary payment was substituted.</p>
+          <p class="last">In addition to the recordings, there were several sources of detailed demographic data:
+            semi-structured interviews by our research team in 1970, 1991, 1993, and 2012, and a Stanford Medical School
+            survey of the community done in the summer of 1991. Participants and their mothers were interviewed about
+            their sociodemographic environment, i.e., the distal learning environment, and about the participant’s
+            weaving expertise. This information was integrated into the analysis.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_2" id="S0005-S2004">
+          <h3 class="section-heading-3" id="d1e570">Assessing the distal learning environment</h3>
+          <p>Based on the semi-structured interviews, our analysis of generational change utilized the following
+            components of the distal learning environment: girls’ and mothers’ schooling, family involvement in
+            commerce, textile commerce, family size, infant and child mortality, and mobile technologies. Other
+            sociodemographic elements were part of the interview, but not used in the present article.</p>
+          <div class="NLM_sec NLM_sec_level_3" id="S0005-S2004-S3001">
+            <h4 class="section-heading-4" id="d1e573">Girls’ and mothers’ schooling</h4>
+            <p class="last">In semi-structured interviews carried out in participants’ homes we asked each girl and
+              mother about the schooling that each had at the time of the study. We recorded answers in years, including
+              kindergarten as one possible year of schooling.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_3" id="S0005-S2004-S3002">
+            <h4 class="section-heading-4" id="d1e576">Family commerce and textile commerce scales</h4>
+            <p>In order to test our hypothesis that involvement in commerce was a significant change in the distal
+              learning environment, we used interview and Stanford survey data to create a family-commerce scale and a
+              textile-commerce scale. Family commerce included activities as both seller and consumer. Some examples of
+              family commerce are: selling agricultural products, owning a car, and owning a number of consumer products
+              ranging from small electric appliances to small refrigerators. The scale had 15 items; the score consisted
+              of the percentage of commercial activities in which family members participated or items the family
+              possessed.</p>
+            <p>Some examples of textile commerce activities are: selling weavings, winding weaving thread for pay,
+              weaving on order, embroidering on order, and selling thread. The scale had 12 items; the score consisted
+              of the percentage of textile commerce activities in which mother and daughter participated. <button
+                class="ref show-table-fig-ref" data-id="t0001" data-behaviour="show-popup"
+                data-popup-event-type="table">Table 1</button> presents a complete listing of the items in the
+              family-commerce and textile-commerce scales.</p>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2004-S3003">
+              <h4 class="section-heading-4" id="d1e684">Mobile technology scale</h4>
+              <p class="last">In order to test our hypothesis that use of mobile technology was a significant change in
+                the learning environment, we used interview data to create a mobile technology scale. This four-item
+                scale
+                included whether the participant had and used a cell phone, and whether the participant had or used a
+                camera, video-recorder, or internet via the cell phone. Each of these items just required a yes-no
+                response; the “yes” items were totaled for a score.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2004-S3004">
+              <h4 class="section-heading-4" id="d1e687">Family size</h4>
+              <p class="last">This information was gleaned from our family tree cards, which we added to in each
+                generation of participants. The information about family composition was gathered during semi-structured
+                interviews in which we asked about the names, birth dates and/or ages of each member of a nuclear
+                family.
+                This record allowed the determination of the sibling set in each generation. We collected data on all
+                the
+                children in the family, living and deceased, at the time of the data collection. For these analyses, we
+                used, for each participant, the total number of children in their sibling set, including those deceased,
+                because we were interested in overall birth rates.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2004-S3005">
+              <h4 class="section-heading-4" id="d1e690">Infant and child mortality</h4>
+              <p class="last">We used interviews, recorded on our family tree cards, as the source of this variable.
+                These
+                cards noted when any child in a particular nuclear family had died at any age before our interview.</p>
+            </div>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0005-S2005">
+            <h3 class="section-heading-3" id="d1e693">Coding the video recordings</h3>
+            <p>Video recordings from each of the three cohorts were extensively coded by Maynard and Childs. The
+              foundation of the coding system lay in the fact that community members had taught both coders backstrap
+              loom
+              weaving and that these two authors had not only learned to weave, but they had also watched many
+              Zinacantec
+              girls being taught how to weave during the video recording sessions. By the third generation, Maynard
+              already knew all the families involved in the study.</p>
+            <p>The basis for creating and identifying verbal codes lay in the fact that the coders were both fluent in
+              the
+              Maya language of Tzotzil. The limitations of formal education in the community meant that the very concept
+              of coding categories would not be meaningful to our local assistants, either to expert Zinacantec weavers,
+              or to weaving learners. Coding could not be done blind to the hypotheses because both qualified coders
+              were
+              also authors of the research, involved in collecting and/or analyzing all three waves of data collection,
+              and were therefore familiar with the hypotheses.</p>
+            <p class="last">All the video recordings from the first two cohorts were re-coded for our new variables of
+              interest. We coded the first cycle of the weaving lesson because this cycle is difficult, providing the
+              opportunity for questions, errors, and other variables of interest. By the first cycle, we mean from the
+              moment of the insertion of the first bobbin until the moment of the insertion of the third bobbin. The
+              first-cycle segments ranged from 0:41 − 13:29, with an average of 3:26. As our unit of analysis was the
+              activity, in every case, the entire segment was coded.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0005-S2006">
+            <h3 class="section-heading-3" id="d1e698">Assessing the proximal learning environment</h3>
+            <p>Our analysis of generational change utilized the following components of the proximal learning
+              environment
+              manifest during the first cycle of weaving in the weaving video: body instruction, teacher praise, teacher
+              criticism, and teacher explanations.</p>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2006-S3001">
+              <h4 class="section-heading-4" id="d1e701">Body instruction</h4>
+              <p class="last">Body instruction given to girls was defined as weaving teachers providing verbal and
+                nonverbal instruction about what to do with the body in order to weave. Verbal instructions included
+                “Kneel!”, “Sit up straight!” and “Lean back!”. Nonverbal instruction included moving the learner’s body,
+                including moving the hand, pressing the back forward, or demonstrating how to lean forward properly.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2006-S3002">
+              <h4 class="section-heading-4" id="d1e704">Praise and criticism</h4>
+              <p class="last">For all three generations, praise was operationally defined as verbal approval of behavior
+                during weaving. It included supportive verbal comments such as “Good!” For all three generations,
+                criticism was operationally defined as negative verbal appraisal during weaving. It included comments
+                such
+                as “You don’t know how!” Because of its low frequency, criticism was not able to be used as a variable
+                in
+                itself. However, the ratio of praise to criticism and its change over the generations was explored.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2006-S3003">
+              <h4 class="section-heading-4" id="d1e707">Teacher explanations</h4>
+              <p class="last">Explanations were defined as explaining why a particular action happened, why the cloth
+                was
+                a certain way, or why the girl needed to do something. Explanations included “Just like that already
+                because it is tight already.” and “Because it is thin, I said.”</p>
+            </div>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0005-S2007">
+            <h3 class="section-heading-3" id="d1e710">Assessing the learner</h3>
+            <p>To assess the learner, we coded, during the first cycle of weaving, questions asked by the girl. In the
+              semi-structured interview that took place during the session, we asked the girl’s age and interviewed her
+              about her weaving experience, obtaining information for our scale of weaving expertise.</p>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2007-S3001">
+              <h4 class="section-heading-4" id="d1e713">Questions</h4>
+              <p class="last">We noted and quantified questions asked by girls. Questions included “Where does this go?”
+                “Why does this go here?” and “Like this?” As illustrated by this last question, the nonverbal element of
+                intonation was utilized to identify a question, even when question syntax was not used. Concerning overt
+                nonverbal questions - “gestures which serve to elicit a verbal response such as questioning glances,
+                raised eyebrows, shoulder or hand shrugs, and puzzled facial expressions” (Kearsley, <span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT0041" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1976</a></span>,
+                p. 357), if these occurred at all, they were extremely infrequent and were not coded. “Covert nonverbal
+                questions are internally directed questions we ask and answer ourselves” (Kearsley, <span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT0041" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1976</a></span>,
+                p. 357). Such nonverbal questions were of course invisible and therefore could not be coded.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2007-S3002">
+              <h4 class="section-heading-4" id="d1e723">Weaving expertise</h4>
+              <p>In the semi-structured interview, we asked about girls’ weaving experience, noting whether they had
+                woven
+                items of increasing difficulty including a basic small cloth, two different shawl patterns worn by girls
+                and women, a skirt, and the poncho worn by boys and men. Weaving expertise was a six-point scale.
+                Starting
+                with 1 (no experience), the weaver received one additional point for having woven each of the five
+                items.
+                Girls’ weaving expertise ranged from zero to five items, with a mean of 1.69 items woven. Fifty-one
+                girls
+                had no prior experience and 28 of them had woven only one item, which would generally have been the
+                basic
+                small cloth. It is important to note that the items contain a large range of difficulty, both in pattern
+                and in size. The patterns are put in at the warp-winding stage (and can be produced by a different
+                weaver), so they are not relevant to weaving difficulty. However, size is a very relevant variable -
+                larger items are more difficult to handle because of weight and balance issues, given that the weaver is
+                part of the loom frame in backstrap-loom weaving.</p>
+              <p class="last">Because of their large size, skirts would generally be the most difficult of the five
+                items
+                to weave. This scale was our measure of weaving expertise.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="">
+              <h4 class="section-heading-4" id="d1e727">Age</h4>
+              <p class="last">This variable was also assessed in the semi-structured&nbsp;interview.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="">
+              <h4 class="section-heading-4" id="d1e730">Kneeling</h4>
+              <p class="last">The kneeling variable was coded from the videos. It had three values: kneeling throughout
+                the coded segment, kneeling for part of the time; and using other body positions the whole time.</p>
+            </div>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0005-S2008">
+            <h3 class="section-heading-3" id="d1e733">Reliability</h3>
+            <p>We calculated reliability of the video coding by comparing the two coders’ assessments of each variable
+              sampling each generation, for a total of 22 learners. We present here reliability for the variables
+              referred
+              to in this article. The reliability of the lengths of segments was assessed by Pearson correlation
+              coefficients: <i>r</i> = 1.0, <i>p</i> = .000. The reliability of the other observed behavioral variables
+              was assessed by the Kappa statistic. Kappas were calculated for teacher explanation (<i>K</i> = 1.0)
+              praise
+              (<i>K =</i> .645), criticism (<i>K =</i> .68), body instruction (<i>K</i> = .653), learner questions
+              (<i>K</i> = .904), and learner kneeling (<i>K</i> = 1.0). These Kappas show moderate to perfect agreement
+              (Landis &amp; Koch, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0043" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>1977</a></span>).</p>
+            <p class="last">As mentioned earlier, both coders were themselves taught to do backstrap loom weaving in
+              Nabenchauk, so they understood, through their own experience, the local weaving apprenticeship process.
+              They
+              also understood how to input the variables into an electronic database. This latter skill component,
+              necessary for coding, was not available in the community itself because of limited availability of formal
+              education.</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0005-S2009">
+            <h3 class="section-heading-3" id="d1e766">Composite distal and proximal learning environment variables
+              utilized in the mediation model</h3>
+            <p>In creating composite variables, all of the component variables were standardized, as they all had
+              different scales, and the standardized values were averaged in each composite variable. Component
+              variables
+              were included in each of the composite variables if they were found to be correlated with at least one of
+              the other component variables (with all relations, significant or not, being in the expected direction),
+              and, for distal and proximal learning environment variables, with generation and/or at least one of the
+              learning change dependent variables.</p>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2009-S3001">
+              <h4 class="section-heading-4" id="d1e769">Why composite variables?</h4>
+              <p class="last">Although there is no clear method of determining the optimal sample size for bootstrap
+                methods for mediation (Fritz &amp; MacKinnon, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0027"
+                    href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2007</a></span>), in particular mediation with multiple
+                mediators
+                (MacKinnon et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT7942788" href="#"
+                    data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2004</a></span>, Lockwood, &amp; Williams, <span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT7942788" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2004</a></span>),
+                the bootstrap mediation used in this study was found to be the best of the mediation methods as well as
+                the one that allowed for the smallest samples, even under 60 participants for a single mediation path
+                with
+                large effects (Fritz &amp; MacKinnon, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0027" href="#"
+                    data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2007</a></span>; MacKinnon et&nbsp;al., 2004). Given the serial
+                mediation used in the current study, we assumed that a larger number of participants would be necessary,
+                although the addition of variables in some cases might actually increase the power without the need to
+                have a larger sample (MacKinnon et&nbsp;al., 2004). Nevertheless, we thought the most prudent approach
+                and
+                one that would allow for the clearest explanations would be to limit the number of mediating variables
+                in
+                the model. Rather than testing each of the component variables as mediators, and specifically testing
+                the
+                serial effect of each of the sociodemographic variables on each of the learning environment variables,
+                and, in turn, the effect of each of the learning environment variables on the dependent variable of
+                girl’s
+                question asking, we chose to create a single composite sociodemographic distal learning variable and a
+                single composite proximal learning variable. Composite variables are also in line with Greenfield’s
+                theoretical formulation of the equipotentiality of all Gemeinschaft and Gesellschaft variables
+                (Greenfield, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0031" href="#"
+                    data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2009</a></span>). However, the relationship among components of
+                the distal and proximal learning environments is put to empirical test by correlational analyses
+                presented
+                at the beginning of the Results section.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2009-S3002">
+              <h4 class="section-heading-4" id="d1e788">Composite distal learning environment variable</h4>
+              <p>This variable was created by standardizing and averaging each of the sociodemographic variables of
+                mother’s schooling, learner’s schooling, family participation in commerce, access to mobile technology,
+                and size of sibling set (reverse coded), and then averaging the standardized variables together.
+                Participation in textile commerce was not used in the composite variable because of its expected
+                curvilinear relationship to generation.</p>
+              <p>Each of the component standardized variables was found significantly correlated with generation
+                (<i>p</i>
+                &lt; .001: positive correlation of generation with commerce, mobile technology, learner’s schooling;
+                <i>p</i> = .01: positive correlation of generation with mother’s schooling; <i>p</i> &lt; .001: negative
+                correlation of generation with family size).
+              </p>
+              <p>Standardized scores for commerce, mobile technology, learner’s schooling, and mother’s schooling were
+                also positively correlated with learner questions; while family size was negatively correlated. All of
+                these correlations reached the .03 level of significance or better.</p>
+              <p class="last">The same variables comprising the distal learning environment had the opposite
+                relationship
+                with weaving expertise. Negative correlations of weaving expertise with mother’s schooling and mobile
+                technology, plus a positive correlation of weaving expertise with family size reached the .03 level of
+                significance or better. Correlations of weaving expertise with learner’s schooling and family commerce
+                were negative as predicted but did not attain statistical significance at the .05 level.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0005-S2009-S3003">
+              <h4 class="section-heading-4" id="d1e804">Composite proximal learning environment variable</h4>
+              <p>This variable concerned the specific learning of weaving; all component variables were coded from the
+                weaving videos during the first cycle of weaving (insertion of first two crosswise [weft] threads),</p>
+              <p>All standardized components of the proximal learning environment, including teacher explanations,
+                showed
+                significant positive correlations with learner questions and generation (<i>p &lt;</i> .001). All
+                standardized components of the proximal learning environment showed negative correlations with weaving
+                expertise and generation. The negative correlations were all statistically significant except for
+                teacher
+                explanations (body instruction: <i>p &lt;</i> .001; praise: <i>p</i> = .03; generation: <i>p</i> = .02).
+              </p>
+              <p class="last">The composite variable was created by standardizing the number of times the teacher
+                offered
+                praise, the number of times the teacher provided explanations, and the number of times the teacher gave
+                body instructions, and then averaging the standardized variables.</p>
+            </div>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0005-S2010">
+            <h3 class="section-heading-3" id="d1e822">Analyses</h3>
+            <p>Differences between the three generations were tested by means of analyses of variance, with covariates
+              such as age where appropriate. Effect size was estimated using partial eta squared. .01 was considered a
+              small effect size, .06 a medium effect size, and .14 a large effect size. Because of unequal variances and
+              sample sizes in the three generations of weaving learners, the Games-Howell test for multiple comparisons
+              was used to assess which generations were significantly different from each other. In the case of one
+              proximal variable, the ratio of praise to criticism, a chi-square test was used. To test whether schooling
+              competed with weaving, a correlational analysis using Pearson’s <i>r</i> was carried out.</p>
+            <p class="last">For the multilevel model, a test of serial mediation was accomplished through the program
+              PROCESS version 3.1 (Hayes, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0037" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2018</a></span>) which uses bootstrapping, allows for tests of
+              multiple mediators, and allows for testing a model in which mediators are ordered. A mediation is
+              considered
+              to be significant if the CI of test results does not include zero.</p>
+          </div>
+        </div>
+        <div class="NLM_sec NLM_sec_level_1" id="S0007">
+          <h2 class="section-heading-2" id="d1e838">Results</h2>
+          <p>We begin with the macro level of distal learning environment and the microlevel of proximal learning
+            environment. We see each as each composed of a suite of interacting and synergistic variables.</p>
+          <div class="quote">
+            <p class="first last">Hypothesis 1: Ecology: Sociodemographic components of the distal (macro) learning
+              environment will show positive intercorrelations among family involvement in commercial activities, use of
+              mobile technologies, learner’s schooling, and mother’s schooling, as well as negative correlations with
+              family size</p>
+          </div>
+          <p><button class="ref show-table-fig-ref" data-id="t0002" data-behaviour="show-popup"
+              data-popup-event-type="table">Table 2</button> shows the correlations among the standardized
+            sociodemographic variables used to construct the composite sociodemographic distal learning variable. This
+            table shows that these variables are moderately intercorrelated. Most of the correlations are statistically
+            significant, but each variable also explains unique variance. These correlations are in line with the theory
+            of social change, culture, and human development (Greenfield, <span class="ref-lnk lazy-ref bibr"><a
+                data-rid="CIT0031" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                data-label="reference"><span class="off-screen">Citation</span>2009</a></span>); it posits that, at each
+            level of the theory,
+            variables operate synergistically rather than independently.</p>
+          <div class="quote">
+            <p class="first last">Hypothesis 2: Components of the proximal (micro) learning environment will show
+              positive
+              intercorrelations among body instruction, teacher explanations, and teacher praise</p>
+          </div>
+          <p>As with the sociodemographic variables, the proximal learning environment variables are, as predicted,
+            moderately intercorrelated (<button class="ref show-table-fig-ref" data-id="t0003"
+              data-behaviour="show-popup" data-popup-event-type="table">Table 3</button>). All correlations are
+            statistically significant, but each
+            variable also explains unique variance. Once again, these correlations are also in line with the theory of
+            social change, culture, and human development (Greenfield, <span class="ref-lnk lazy-ref bibr"><a
+                data-rid="CIT0031" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                data-label="reference"><span class="off-screen">Citation</span>2009</a></span>) that, at each level of
+            the theory, variables operate
+            synergistically rather than independently.</p>
+
+          <div class="NLM_sec NLM_sec_level_2" id="S0007-S2001">
+            <h3 class="section-heading-3" id="d1e1020">Sociodemographic changes across the three generations: the distal
+              learning environment</h3>
+            <p>First, we were interested in demonstrating how the distal learning environment had changed over the three
+              generations, so we examined engagement with schooling, involvement in commerce and textile commerce, and
+              family size. Because the details of this historical process are crucial to the theoretical framework and
+              the
+              statistical models being tested, we include these shifts as part of the results, rather than as
+              “background”
+              factors placed in the Participants subsection of Method.</p>
+            <div class="quote">
+              <p class="first last">Hypothesis 3: Girls’ schooling will increase</p>
+            </div>
+            <p>We were interested in the endpoint of schooling for most girls. Because post-primary education was very
+              rare, we analyzed the schooling of girls age 13 years and up. We found that girls’ schooling went up
+              significantly over the three generations: Using just participants age 13 and up (<i>F</i> (2, 55) 25.82,
+              <i>p</i> &lt; .001, partial eta squared = .48, large effect size). A Games-Howell post-hoc test for
+              multiple
+              comparisons indicated that the difference between Generation 1 and Generation 2 was significant at less
+              than
+              .05, whereas the difference between Generation 2 and Generation 3 was significant at less than .001.
+              Controlling for age as a covariate, schooling still went up significantly across the generations (<i>F</i>
+              (3, 54) = 30.76, <i>p</i> &lt; .001, partial eta squared = .53, large effect size). The mean years of
+              schooling for girls ages 13 and up were: Generation 1 (0), Generation 2 (.60), and Generation 3 (4.76). No
+              girls 13 and up had ever been to school in 1970. In 1991 and 1993, the range for schooling was zero to six
+              years. In 2012, the range was zero to 9.5 years. The increased range in Generation 2 indicated that some
+              girls were completing elementary school, which had become functional for carrying out commercial
+              activities.
+              The still greater range in 2012 reflected the fact that that at least one girl had received some secondary
+              education in a neighboring Zinacantec community, a possibility that had not been there one generation
+              earlier.
+            </p>
+            <div class="quote">
+              <p class="first last">Hypothesis 4: Mothers’ schooling will increase</p>
+            </div>
+            <p>There was a small increase in mothers’ schooling, which was statistically significant <i>F</i> (2, 131) =
+              3.51, <i>p</i> = .03, partial eta squared = .05, a small effect size). Mothers’ mean schooling in
+              Generation
+              1 was 0, while it was .36 years in Generation 2, and .84 years in Generation 3. A Games- Howell test
+              indicated that the significant increase occurred between Generation 1 and Generation 2 (<i>p = .</i>004).
+              The increase between Generation 2 and Generation 3 was not statistically significant.</p>
+            <p>In 1970 (Generation 1), not one mother had any schooling. In the early 1990s (Generation 2), the range
+              went
+              from zero to three years of school. In 2012 (Generation 3) the range of mothers’ school experience went
+              from
+              zero to six years. Again, the range is more telling than the means because it signals increased
+              educational
+              opportunity. One can also see that, as schooling opportunity expanded, daughters in the youngest
+              generation
+              had much more opportunity than their mothers had had.</p>
+            <div class="quote">
+              <p class="first last">Hypothesis 5: Family commerce will increase across three generations</p>
+            </div>
+            <p>Family involvement in commerce went up over the three generations (<i>F</i> (2, 131) = 37.62, <i>p</i>
+              &lt;
+              .001, partial eta squared = .37, a large effect size). Although the increase from Generation 1 to
+              Generation
+              2 was the largest (Games-Howell, <i>p</i> &lt; .001), involvement in family commerce continued to go up
+              from
+              Generation 2 to Generation 3 (Games-Howell, <i>p</i> = .02). Mean commercial participation in Generation 1
+              was 0, while it was 3 out of 15 items in Generation 2 and 4 out of 15 items in Generation 3. The range was
+              zero in Generation 1, 0 to 4 in Generation 2, and zero to 4 in Generation 3. The fact that the range
+              stayed
+              constant while the mean increased in Generation 3 shows that the variety of commercial activities had
+              remained constant, but more residents of Nabenchauk were engaging in them.</p>
+            <div class="quote">
+              <p class="first last">Hypothesis 6: Textile commerce, which had increased significantly from Generation 1
+                to
+                Generation 2, would decrease in Generation 3</p>
+            </div>
+            <p>As expected, the overall ANOVA indicated a significant change across the generations (<i>F</i> (2, 130) =
+              8.89, <i>p &lt;</i> .001, partial eta squared = .12). Our means for textile commerce show that, in 1970,
+              the
+              average weaving learner was not involved in any type of textile commerce, and the range was zero. In the
+              early 1990s, the average weaving learner had participated in 4 out of 12 possible types of textile
+              commerce;
+              the range was 0 to 10. In 2012, the average weaving learner had participated in only two or three types of
+              textile commerce; the range was zero to nine. The Games-Howell test indicated that the increases in
+              textile
+              commerce from 1970 to the early 1990s and 2012 were significant at the .001 level, as expected. While the
+              expected decrease from the early 1990s to 2012 took place, it did not attain statistical significance.</p>
+            <div class="quote">
+              <p class="first last">Hypothesis 7: Family size will decrease across the generations</p>
+            </div>
+            <p>Family size decreased significantly over time (<i>F</i> (2, 130) = 10.944, <i>p</i> &lt; .001, partial
+              eta
+              squared = .144, a large effect size. The mean number of children in the family was (to the nearest whole
+              number): Generation 1: 7; Generation 2: 5; Generation 3: 4. The significant difference, according to the
+              Games-Howell test, is between Generation 2 and Generation 3 (<i>p =</i> .001).</p>
+            <p>The range of the number of children in the family is also interesting. The ranges are as follows:
+              Generation 1: 1-13; Generation 2: 1-10; Generation 3: 1-8. Range is probably more informative than mean
+              because young families in each generation were likely to add children in the future.</p>
+            <div class="quote">
+              <p class="first last">Hypothesis 8. Infant and child mortality will decrease across the generations</p>
+            </div>
+            <p>A one-way analysis of variance showed that there was a significant decrease in infant and child mortality
+              from a mean of almost 1 child per nuclear family in Generation 1 to a mean of about 1 child per 3 families
+              in Generation 2 to a mean of about 1 child in 30 families in Generation 3 (<i>F</i> (2, 130) = 7.261,
+              <i>p</i> = .001, partial eta squared = .100, medium effect size) . Using the Games-Howell Test, the only
+              significant difference was the decline in infant and child mortality from Generation 2 to Generation 3
+              (<i>p</i> = .006). The range was from zero to five child deaths per family in Generation 1, zero to four
+              child deaths per family in Generation 2, zero or one child death in Generation 3.
+            </p>
+            <div class="quote">
+              <p class="first last">Hypothesis 9. Mobile technologies will be used in Generation 3</p>
+            </div>
+            <p class="last">There were no mobile technologies in Generations 1 or 2. In sharp contrast, mobile
+              technologies were prevalent in Generation 3. The mean for Generation 3 was between one and two out of four
+              items. The range went from zero to four. A significant ANOVA (F (2, 125) = 37.370, <i>p &lt;</i> .001,
+              partial eta squared = .374, a large effect size) and a post hoc Games-Howell test showed that showed that
+              the Generation 3 differed significantly from Generation 1 and Generation 2 <i>(p</i> &lt;.001).</p>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0007-S2002">
+            <h3 class="section-heading-3" id="d1e1117">Historical shifts across three generations: Changes in the
+              proximal
+              learning environment</h3>
+            <div class="quote">
+              <p class="first last">Hypothesis 10: Girls would require more instruction in body postures and movements
+                in
+                Generation 3, compared with Generations 1 and 2</p>
+            </div>
+            <p>During the first weaving cycle, we counted verbal and nonverbal body instructions as well as instructions
+              that were both verbal and nonverbal. There was more total body instruction across the historical periods
+              (verbal, nonverbal, and both together). <i>F</i> (2, 130) = 4.22, <i>p</i> = .017. partial eta squared =
+              .060, medium effect size. Means are Generation 1 = .46, Generation 2 = .47, Generation 3 = 1.53. These
+              means
+              translate to about half the learners receiving no body instruction in Generation 1 or 2 and, on average,
+              learners in Generation 3 each receiving two or three instructions concerning body posture or movement. The
+              range went from 0 to 4 instances of body instruction in Generation 1, 0 to 6 instances in Generation 2,
+              and
+              0 to 17 instances in Generation 3.</p>
+            <div class="NLM_sec NLM_sec_level_3" id="S0007-S2002-S3001">
+              <h4 class="section-heading-4" id="d1e1129">Body instruction and kneeling</h4>
+              <p>We analyzed an example of the body instruction given to a weaver at age 9 years in 1991 and compared it
+                with her daughter at the same age (See <button class="ref show-table-fig-ref" data-id="F0001"
+                  data-behaviour="show-popup" data-popup-event-type="fig">Figure 1</button> and its explanatory
+                caption).
+                In 1991, PP was able to kneel correctly for a long period of time, and her mother did not give her
+                instruction in how to kneel properly because such instruction was not necessary. But in 2012, PP’s
+                daughter E was unable to kneel, complaining that her legs hurt, and her grandmother, PP’s mother, gave
+                her
+                granddaughter a number of prompts to position herself properly. We attribute the inability to kneel to
+                the
+                fact that PP grew up kneeling around the fire to make tortillas and carry out other activities. Small
+                chairs were preferentially allocated to the males in the family. But daughter E grew up with tables and
+                chairs; she lacked experience kneeling. It is known that to maintain the ability to kneel requires
+                regular
+                experience in kneeling growing up (Bolger, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0013"
+                    href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2010</a></span>; Molleson, <span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT0052" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2007</a></span>/2016).</p>
+              <p>For the sample as a whole, all learners kneeled for the whole analyzed weaving segment in 1970. In both
+                the 1990s and 2012, a few girls deviated and used other positions while weaving. However, this was still
+                a
+                minority pattern (4 out of 58 in the 1990s, 5 out of 62 in 2012). Hence, chi-square tests (Preacher,
+                <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT1069" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2001</a></span>)
+                did not achieve statistical significance for generational change in weaving position.</p>
+              <div class="figureView">
+                <div class="short-legend">
+                  <caption>
+                    <p class="captionText"><span class="captionLabel">Figure 1. </span> (Top): This is PP at age 9,
+                      kneeling to weave in 1991. PP has never been to school, and she grew up kneeling, for example,
+                      while
+                      making tortillas. Note how she is rising on her knees with her feet straight out in back of her.
+                    </p>
+                    <p class="captionText">(Bottom): This is her daughter E in 2012, also age 9. E has been going to
+                      school since preschool and has not learned to weave. This is her grandma CM trying to teach her
+                      for
+                      our study. But notice the body position. At 5:38pm, she is kind of kneeling but with her feet
+                      splayed out. But it is too uncomfortable for her and 8 minutes later (at 5:46), she is sitting.
+                    </p>
+                  </caption>
+                </div>
+              </div>
+              <div class="quote">
+                <p class="first last">Hypothesis 11: Praise by weaving teachers would increase across the generations,
+                  as
+                  would the ratio of praise to criticism</p>
+              </div>
+              <p>Confirming this hypothesis, we found that weaving teachers gave more praise across the three historical
+                periods (<i>F</i> (2,131) = 5.79, <i>p</i> = .004, partial eta squared = .081, medium effect size). More
+                meaningful than means is the intergenerational increase in the number of weaving teachers who gave any
+                praise at all. In Generation 1, not 1 weaving teacher out of 14 praised the learner during the first
+                cycle
+                of weaving. In Generation 2, 5 out of 58 teachers praised the learner. In Generation 3, 21 out of 62
+                teachers praised the learner during the first cycle of weaving. The Games-Howell indicated that the
+                statistically significant difference was between Generation 2 and Generation 3. In Generation 2, the
+                range
+                was zero to three instances of praise; in Generation 3 the range was zero to eight. In addition, in
+                accord
+                with the hypothesis, the ratio of praise to criticism increased significantly across the three
+                generations
+                (Chi-square = 12.11, <i>df</i> = 2, <i>p</i> =.002).</p>
+              <div class="quote">
+                <p class="first last">Hypothesis 12: Explanations by weaving teachers will increase across the
+                  generations
+                </p>
+              </div>
+              <p class="last">Explanations by weaving teachers went from none in Generation 1 to 8 explanations provided
+                by a sample of 58 weaving teachers in Generation 2 and 9 explanations provided by a sample of 62 weaving
+                teachers in Generation 3. The range in Generation 2 was from one to four explanations; the range in
+                Generation 3 was from one to three explanations. This shift from none to low frequency occurred between
+                Generation 1 and Generation 2. Because inferential statistics are not designed to compare a difference
+                between zero and low frequency, this generational shift did not attain statistical significance.
+                However,
+                the increase of a feature from none to some is an important development in cultural evolution because
+                cultural features adaptive in particular environments are selected for and become more frequent over
+                time
+                (cf. Fog, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0026" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>1999</a></span>).
+                In addition, as our later analysis will show, it was part of the synergy with other Gesellschaft
+                variables
+                and was part of a successful three-generational model that integrated all three levels of analysis,
+                sociodemographic change (the distal learning environment), teacher change (the proximal learning
+                environment), and learner change.</p>
+            </div>
+          </div>
+          <div class="NLM_sec NLM_sec_level_2" id="S0007-S2003">
+            <h3 class="section-heading-3" id="d1e1180">Learner change across three generations</h3>
+            <div class="quote">
+              <p class="first last">Hypothesis 13: Girls would have less weaving expertise in the current generation</p>
+            </div>
+            <p>We tested this hypothesis by examining the number of items girls had woven prior to the lesson we
+              videotaped. Although the average age of the girls was approximately the same across the samples in the
+              three
+              generations, girls in Generation 3 had woven the fewest items prior to the weaving lesson we videotaped;
+              means were one prior item in Generation 3 (to the closest whole number) vs. two in Generation 1 and
+              Generation 2. An ANOVA confirmed that there was a significant intergenerational difference (F&nbsp;(2,
+              131)
+              = 5.19, <i>p =</i> .007. partial eta squared = .073, medium effect size); the Games-Howell test confirmed
+              that the only significant difference was the decline between Generation 2 and Generation 3 (<i>p =
+                .</i>004). The range went from zero to five, the maximum, in each generation. Because learners gradually
+              learn to weave more difficult items as they get older, we also carried out an analysis of covariance with
+              age as the covariate and generation once again as the independent variable. This analysis confirmed that
+              there were significant differences in the number of items girls had woven in the three generations
+              (<i>F</i>
+              (2, 130) = 4.30, <i>p</i> = .016, partial eta squared = .062, medium effect size). As expected, age was a
+              significant covariate (<i>F</i> (1, 130) = 93.84, p &lt; .001, partial eta squared = .42, large effect
+              size).</p>
+            <div class="quote">
+              <p class="first last">Hypothesis 14: Schooling would compete with weaving; in other words, girls would not
+                be learning to weave because they were attending school</p>
+            </div>
+            <p>This hypothesis was confirmed: Controlling for age, weaving expertise was negatively correlated with
+              schooling. Those with more schooling had a lower level of weaving expertise, partial <i>r</i> (128) =
+              −.24,
+              <i>p</i> = .006, two-tailed test.
+            </p>
+            <div class="quote">
+              <p class="first last">Hypothesis 15: Question asking, a trait adaptive in school, would increase across
+                the
+                generations</p>
+            </div>
+            <p>The frequency of girls asking questions was not high, but we found that the percentage of girls asking
+              questions increased from Generations 1 and 2 to Generation 3: Percentage of girls who asked the teacher at
+              least one question in each generation: In Generation 1, 14% of the girls asked questions; in Generation 2,
+              12% asked questions, and in Generation 3, 37% of the girls asked at least one question. We found that
+              generation made a significant difference in question-asking: <i>F</i> (2, 131) = 6.39, <i>p</i> = .002,
+              partial eta squared = .089, a medium effect size. The range was zero to one in Generation 1, zero to two
+              in
+              Generation 2, and zero to three in Generation 3. A Games-Howell test indicated that weaving learners in
+              Generation 3 asked significantly more questions than learners in Generation 1 (<i>p =</i> .005) or
+              Generation 2 (<i>p</i> = .004<i>)</i>. Generations 1 and 2 are not significantly different from each
+              other.
+            </p>
+            <div class="quote">
+              <p class="first last">Hypothesis 16: Integrated model of changes in the distal learning environment, the
+                proximal learning environment, and learner behavior</p>
+            </div>
+            <p>The data on which these results are based allow for comprehensive tests of the larger theoretical claim
+              of
+              this research—that changes in a community’s sociodemographic characteristics will lead to corresponding
+              adaptations of learning environments which will in turn foster different developmental pathways. We begin
+              with the correlations.</p>
+            <p>As an indicator of individual development adapted to a Gesellschaft ecology, we used the learner variable
+              of the number of questions a girl asked during the first cycle of her weaving. The higher values of
+              generation, distal learning environment, and proximal learning environment represent a Gesellschaft
+              orientation, and number of questions was positively correlated with these variables (<button
+                class="ref show-table-fig-ref" data-id="t0004" data-behaviour="show-popup"
+                data-popup-event-type="table">Table 4</button>).</p>
+            <p>As an indicator of individual development adapted to a Gemeinschaft ecology, we used the learner variable
+              of weaving expertise - the ability to weave increasingly difficult items. The lower values of generation,
+              distal learning environment, and proximal learning environment represent a Gemeinschaft orientation, and
+              weaving expertise was negatively correlated with these variables (<button class="ref show-table-fig-ref"
+                data-id="t0004" data-behaviour="show-popup" data-popup-event-type="table">Table 4</button>).</p>
+            <p>In sum, we created two causal models that would explicate the factors producing historical changes in
+              learner skills. One model (<button class="ref show-table-fig-ref" data-id="F0002"
+                data-behaviour="show-popup" data-popup-event-type="fig">Figure 2</button>) identified factors leading to
+              the intergenerational increase in question-asking while learning to weave, a transformation of cultural
+              transmission in the Gesellschaft direction. The other model (<button class="ref show-table-fig-ref"
+                data-id="F0003" data-behaviour="show-popup" data-popup-event-type="fig">Figure 3</button>) identified
+              factors leading to the intergenerational loss of weaving expertise, a key skill that was required and
+              adaptive in the subsistence Gemeinschaft ecology of Nabenchauk in earlier times.</p>
+            <div class="figureView">
+              <div class="short-legend">
+                <caption>
+                  <p class="captionText"><span class="captionLabel">Figure 2. </span> Test of the indirect effect of
+                    generation on the number of girls’ questions as mediated by the sequence of the effect of the distal
+                    learning environment on the number of girls’ questions through learning environment.</p>
+                  <p class="captionText"><i>Note</i>: Significant positive coefficients indicate that the younger the
+                    generation, the more the social ecology was Gesellschaft-adapted as indicated by the
+                    sociodemographic
+                    characteristics in the distal learning environment (a<sub>1</sub>), and the more
+                    Gesellschaft-adapted
+                    the sociodemographic characteristics in the distal learning environment (b<sub>1</sub>) and proximal
+                    learning environment (b<sub>2</sub>), the more questions the girls asked. That the direct effect
+                    (c‘)
+                    is not significant means that the correlation between generation and girls’ questions is largely
+                    explained by the sociodemographic characteristics comprising the distal learning environment
+                    (<i>a</i><sub>1</sub> <i>b</i><sub>1</sub>: CI = [.044, .641]) and the serial mediation of the
+                    distal
+                    learning environment through the proximal learning environment (<i>a</i><sub>1</sub>
+                    <i>d</i><sub>21</sub> <i>b</i><sub>2</sub>: CI = [.005, .295]).
+                  </p>
+                  <p class="captionText"><sup>+</sup><i>p</i> &lt; .068; *<i>p</i> &lt; .05; ****<i>p</i> &lt; .0001.
+                  </p>
+                </caption>
+              </div>
+            </div>
+            <div class="figureView">
+              <div class="short-legend">
+                <caption>
+                  <p class="captionText"><span class="captionLabel">Figure 3. </span> Test of the indirect effect of
+                    generation on weaving increasingly difficult items as mediated by the sequence of the effect of the
+                    distal learning environment on the ability to weave through the proximal learning environment.</p>
+                  <p class="captionText"><i>Note</i>: The significant positive coefficients indicate that the younger
+                    the
+                    generation, the more the social ecology was Gesellschaft-adapted, as indicated by the
+                    sociodemographic
+                    characteristics (a<sub>1</sub>). The significant negative coefficient indicates that the more
+                    Gesellschaft-adapted the proximal learning environment, the fewer difficult pieces were woven by the
+                    girls (b<sub>2</sub>). That the direct effect (c‘) is not significant means that the correlation in
+                    which younger generations were less likely to weave difficult pieces is largely explained by the
+                    serial mediation of the distal learning environment through the proximal learning environment
+                    (<i>a</i><sub>1</sub> <i>d</i><sub>21</sub> <i>b</i><sub>2</sub>: CI = [-.212, -.012]).</p>
+                  <p class="captionText"><sup>+</sup><i>p</i> = .065; *<i>p</i> &lt; .05; ****<i>p</i> &lt; .0001.</p>
+                </caption>
+              </div>
+            </div>
+            <p>Tests of serial mediation (Hayes, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0037" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2018</a></span>) allow testing the predicted models that
+              differences
+              between the generations of weaving learners in the number of questions they asked in the learning session
+              and differences in weaving expertise might be explained by differences in sociodemographic characteristics
+              of the distal learning environment and features of the proximal learning environment during weaving.
+              Importantly, in the predicted models sociodemographic characteristics of the distal learning environment
+              followed by proximal learning environment should be the effective mediators between generation and girls’
+              questions.</p>
+            <p>The test of the whole model in <button class="ref show-table-fig-ref" data-id="F0002"
+                data-behaviour="show-popup" data-popup-event-type="fig">Figure 2</button>, with girls’ questions as the
+              dependent variable and generation, distal learning environment, and proximal learning environment as
+              predictor variables without considering specific paths of mediation, is significant (<i>F</i>(3,130) =
+              24.04, <i>p</i> &lt; .0001.) <button class="ref show-table-fig-ref" data-id="F0002"
+                data-behaviour="show-popup" data-popup-event-type="fig">Figure 2</button> shows the tests of the
+              potential
+              paths of mediation. As expected and illustrated in the figure, there was no direct effect (<i>c‘</i>) of
+              generation on girls’ questions. Also as expected, generation does predict distal learning environment
+              (<i>a</i><sub>1</sub>). When taking generation into account, both distal learning environment
+              (<i>b</i><sub>1</sub>) and proximal learning environment (<i>b</i><sub>2</sub>) predict girls’ questions.
+            </p>
+            <p>The tests for mediation entail combinations of these paths. In terms of the critical test of the total
+              theoretical model, there is serial mediation (<i>a</i><sub>1</sub> <i>d</i><sub>21</sub>
+              <i>b</i><sub>2</sub>: CI = [.001, .262]) such that there is an indirect effect of generation on girls’
+              questions through the serial mediation of distal learning environment followed by the proximal learning
+              environment. These results confirm the predicted model in which each generation is proposed to have a
+              different distal learning environment with distinct sociodemographic features; each distal learning
+              environment then produces a different proximal learning environment - i.e., teacher-learner interaction
+              while learning to weave. Finally, these differences in proximal learning environment then predict
+              different
+              pathways of children’s behavioral development as learners, which in this case is whether or not girls will
+              tend to ask questions of the teacher during a weaving lesson.
+            </p>
+            <p>The test of the whole model in <button class="ref show-table-fig-ref" data-id="F0003"
+                data-behaviour="show-popup" data-popup-event-type="fig">Figure 3</button>, with weaving expertise as the
+              dependent variable and generation, distal learning environment, and proximal learning environment as
+              predictor variables, without considering specific paths of mediation, is statistically significant
+              (<i>F</i>
+              (3,130) = 4.38, <i>p</i> &lt; .01.) <button class="ref show-table-fig-ref" data-id="F0003"
+                data-behaviour="show-popup" data-popup-event-type="fig">Figure 3</button> shows the tests of the
+              potential
+              paths of mediation. As with the previous model and as expected, generation does predict distal learning
+              environment: participants from each subsequent generation are from smaller families, participate in more
+              commercial activity; and receive more schooling; in Generation 3, participants also have mobile technology
+              (<i>a</i><sub>1</sub>). When taking generation into account, a more Gemeinschaft-adapted distal learning
+              environment (larger families, less commercial involvement, less school experience of both learner and
+              mother, and less mobile technology) and a more Gemeinschaft adapted proximal learning environment, (less
+              teacher explanation, less praise, and less body instruction during the weaving lesson) does predict
+              greater
+              weaving expertise (<i>b</i><sub>2</sub>).</p>
+            <p>The tests for mediation entail combinations of these paths. In terms of the critical test of the total
+              theoretical model, there is serial mediation (<i>a</i><sub>1</sub> <i>d</i><sub>21</sub>
+              <i>b</i><sub>2</sub>: CI = [-.201, –.003]) such that there is an indirect effect of generation on weaving
+              expertise through the serial mediation of distal learning environment followed by proximal learning
+              environment.
+            </p>
+            <p class="last">These results confirm the predicted models in which each generation is proposed to have a
+              different distal learning environment with distinct sociodemographic features; the distal learning
+              environment typical of a Gesellschaft ecology then produces processes of weaving apprenticeship - learning
+              environment and child behavior - adapted to this ecology; but these Gesellschaft-influenced processes also
+              lead to a decrement in weaving expertise.</p>
+          </div>
+        </div>
+        <div class="NLM_sec NLM_sec_level_1" id="S0008">
+          <h2 class="section-heading-2" id="d1e1511">Discussion</h2>
+          <p>In this age of globalization, where cultural groups are experiencing rapid changes in economics,
+            demographics, and daily routines, we aimed to study links between macro-level shifts and micro-level
+            learning
+            interactions. Using the Zinacantec Maya community of Nabenchauk in Chiapas, Mexico, as a natural laboratory,
+            we found coordinated changes over a period of more than 60 years in the distal learning environment on the
+            macro-level and the proximal learning environment and learner behavior on the micro-level of weaving
+            apprenticeship. Commercial activity and education expanded for both learners and teachers, mobile
+            technologies
+            began to be used, and family size decreased—all features of the distal learning environment. As these
+            ecological shifts occurred, the proximal features of intergenerational cultural transmission also changed:
+            weaving teachers praised and explained more while criticizing less, and they responded to learners’
+            increased
+            needs for bodily instruction by providing it. In turn, these historical shifts produced an increase in
+            question-asking while learning to weave, a Gesellschaft-adapted skill valued in an educationally oriented
+            society, and a decrease in weaving expertise, a Gemeinschaft-adapted skill valued in a subsistence-oriented
+            community.</p>
+          <p>Fewer girls were learning to weave in 2012 because they were involved in other kinds of activities,
+            including
+            attending school, producing on order (for pay) specialized aspects of textile creation (e.g., drawing
+            patterns
+            for fancy embroidery), or working with their families in other kinds of commerce (Greenfield, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0008" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2004</a></span>;
+            Greenfield et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0031" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2009</a></span>). Because many girls were not learning to weave, the
+            number of items girls had woven prior to our videotaped weaving lesson had decreased significantly by 2012,
+            controlling for learners’ ages. This was the case even though the average age of the girls was approximately
+            the same across the three generations. The decline of weaving expertise is a major phenomenon of Maya
+            cultural
+            evolution; this is the case because backstrap loom weaving has been the most complex technology of Maya
+            culture that has survived over the millennia.</p>
+          <p>Schooling competed with weaving. This finding demonstrates, on the level of individuals in a defined
+            sample,
+            the general anthropological conclusion that school attendance pulls children away from learning subsistence
+            skills (Lancy, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0042" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2012</a></span>). Even
+            more interesting in terms of learning processes, girls who had more schooling behaved differently in the
+            weaving lesson than those with less schooling. Specifically, weaving learners who had been to school asked
+            more questions as they wove in front of the video camera.</p>
+          <p>Our integrated model showed that girls whose mothers had been to school also asked more questions. Asking
+            questions is a form of self-assertion, a quality that is adaptive in a Gesellschaft ecology. Asking
+            questions
+            is, moreover, something that teachers do; and children are encouraged to do the same in school. Prior
+            research
+            has shown that going to school leads children to internalize the role of the teacher (Maynard, <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0005" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2002</a></span>), a
+            role that includes question-asking. An important point is that the practice of asking questions in the
+            context
+            of formal education carried over and generalized to weaving apprenticeship, a process of informal education.
+            In sum, as the evolution of community culture made backstrap-loom weaving less central, intergenerational
+            transmission also evolved, reflecting cultural features that were gaining importance over time—most notably
+            schooling.</p>
+          <p>The topic of socialization in developmental psychology does not generally include the socialization of the
+            physical body and bodily movements. Yet weaving is both a bodily skill and a cognitive skill (Maynard et
+            al.,
+            <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0004" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1999</a></span>;
+            Greenfield et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0006" href="#"
+                data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                  class="off-screen">Citation</span>2003</a></span>; Maynard et al., <span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0011" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2015</a></span>).
+            Therefore, the use of the body was of great interest to us. Compared with Generations 1 and 2, girls in
+            Generation 3 required more instruction in how to use their bodies in weaving. This is because kneeling, a
+            long-established proper body position for Zinacantec Maya females, had diminished in favor of sitting in
+            chairs, at home and at school (for those who went to school). We believe that the everyday use of chairs and
+            the decrease in girls’ weaving experience are factors in the need for body instruction. Our case study of AE
+            showed that body position could not be taken for granted by girls who went to school and had no experience
+            in
+            everyday life of kneeling to carry out various activities.
+          </p>
+          <p>We have traced how the shift at the ecological level from Gemeinschaft to Gesellschaft engendered
+            intergenerational changes in the learning environment, in turn shifting learner behavior in each generation.
+            This cross-cohort comparative design has demonstrated how cultural evolution can be directly observed and
+            assessed on multiple levels across multiple generations. Our findings provide an empirical demonstration of
+            nested levels of environmental influence very much in the spirit of Bronfenbrenner’s (<span
+              class="ref-lnk lazy-ref bibr"><a data-rid="CIT0014" href="#" data-behaviour="toggle-ref"
+                data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>1977</a></span>)
+            Ecological Systems Theory.</p>
+          <p>But our research also documents that these multilevel changes come at a cultural&nbsp;cost - the gradual
+            loss
+            of weaving as an everyday subsistence practice and art form. In this too, the village is a microcosm of
+            Mexico
+            and the globalizing world.</p>
+          <div class="NLM_sec NLM_sec_level_2" id="S0008-S2001">
+            <h3 class="section-heading-3" id="d1e1549">Broader implications</h3>
+            <p>These shifts in the macro-environment in the Gesellschaft direction are happening on a global level. Many
+              societies and communities beyond our study site have moved in recent generations from agriculture and
+              subsistence lifestyles to commerce, formal education, and technology (e.g., Abu Aleon et&nbsp;al., <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0001" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2019</a></span>;
+              Weinstock et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0065" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2015</a></span>; Zeng &amp; Greenfield, <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0068" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2015</a></span>).
+              In
+              addition, migrants all over the world are moving from communities based on agricultural and subsistence
+              lifestyles to host societies that have highly developed commercial, educational, and technological
+              ecologies
+              (e.g., Greenfield et al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0035" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2019</a></span>). Therefore, our longitudinal findings in
+              Nabenchauk
+              are applicable to shifts in learning environment and cognitive development brought about by endogenous
+              social change and migration all over the world. The traditional view in developmental psychology that
+              cultural differences are static does not take into account the fact that the influences on learning
+              undergo
+              massive change over time, making learning and cognitive development dynamic processes, and producing
+              altered
+              patterns of cognitive development (Maynard et al., <span class="ref-lnk lazy-ref bibr"><a
+                  data-rid="CIT0011" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                  data-label="reference"><span class="off-screen">Citation</span>2015</a></span>; Weinstock, <span
+                class="ref-lnk lazy-ref bibr"><a data-rid="CIT0064" href="#" data-behaviour="toggle-ref"
+                  data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2015</a></span>).
+            </p>
+            <p>As Zinacantec girls over time asked more questions as they and their mothers were exposed to more formal
+              education, their behavior became more like the children teachers expect to teach in the U.S. or Western
+              Europe. This finding illustrates another broader implication of the present research: the global direction
+              of social change in the Gesellschaft direction often has the effect of reducing cultural differences in
+              child development (e.g., Zhou et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0069"
+                  href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2018</a></span>).</p>
+            <p>However, lest we mistakenly view the emerging patterns of development as progress, we need to remember
+              the
+              cultural losses from movement away from a Gemeinschaft ecology. On the physical level, we have documented
+              loss of the ability to kneel as the human-made environment has changed. In Chiapas, Mexico, weaving as a
+              cultural practice is a loss in Maya communities across the state resulting from the increase in
+              educational
+              opportunity (Zambrano, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0067" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2000</a></span>). Such losses are also applicable to communities
+              in
+              other countries moving from subsistence life styles to life in Gesellschaft environments. For example,
+              with
+              immigration to Israel, Ethiopian immigrants now value formal education and technology, but devalue their
+              artistic practice of clay sculpture, originally a subsistence practice in their ancestral country of
+              Ethiopia (Greenfield et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0035" href="#"
+                  data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                    class="off-screen">Citation</span>2019</a></span>). While we need to understand that there are
+              developmental losses as well as gains from ecological movement in the Gesellschaft direction, we also need
+              to remember that each set of cultural practices is adapted to a different set of ecological circumstances.
+            </p>
+            <div class="NLM_sec NLM_sec_level_3" id="S0009">
+              <h4 class="section-heading-4" id="d1e1585">Limitations</h4>
+              <p>It would be interesting to know if delayed childbearing was a factor in producing smaller families.
+                Because we have not calculated each mother’s age when she bore her first child, we do not know if this
+                was
+                a factor in family size. We will be able to assess this factor in the future. Undoubtedly, some mothers
+                continued to have children after the study; and these could not be counted in our assessment of family
+                size. This is a limitation on our accuracy in reporting family size, but it is a constant across the
+                generations, so does not affect our statistical comparison across the three generations.</p>
+              <p class="last">Another limitation of the present study is that the coders of the videos were not blind to
+                all hypotheses, particularly because we had published articles together based on the first and second
+                generations. However, the coding system was rather rigid (how many seconds of this, what grammatical
+                structure of that sentence, positive or negative statements). It would be hard to alter the coding
+                systematically to fit a hypothesis. Furthermore, we achieved strong to perfect reliability on the coding
+                of a random set of videos, which also adds to credibility. It would have been impossible to find coders
+                who could weave, speak Tzotzil, and had enough formal education to understand the coding process in
+                order
+                to achieve blind coding.</p>
+            </div>
+            <div class="NLM_sec NLM_sec_level_3" id="S0009-S2001">
+              <h4 class="section-heading-4" id="d1e1589">Educational application and implications for cognitive
+                development</h4>
+              <p>Children’s questions have commonly been seen as a part of cognitive development that is essential to
+                learning in formal and informal learning environments (Chouinard et&nbsp;al., <span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT0017" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2007</a></span>;
+                Haber et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0036" href="#"
+                    data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2021</a></span>). Inquiry-based learning, which, as the name
+                implies, centers on raising questions, specifically from learners, is often seen as the gold-standard of
+                educational practice (Geier et&nbsp;al., <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0030"
+                    href="#" data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2008</a></span>; Nicolopoulou et&nbsp;al., <span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT0055" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>2021</a></span>).
+                However, much educational practice and developmental research treats children’s question-asking and the
+                types of questions they tend to ask as if it were a natural process rather than the product of
+                adaptation
+                to different learning environments. Many educators give a nod to sociocultural practices, seeing
+                schooling
+                and instructional methods as sociocultural practices, but still expecting that children naturally ask
+                questions in the way they, the educators, do. Our research indicates that children’s questionasking is
+                not
+                natural but culturally specific, an adaptation to the learning environments and cognitive development of
+                Gesellschaft social ecologies (Jegede &amp; Olajide, <span class="ref-lnk lazy-ref bibr"><a
+                    data-rid="CIT0039" href="#" data-behaviour="toggle-ref" data-ref-type="bibr"
+                    data-label="reference"><span class="off-screen">Citation</span>1995</a></span>). The current
+                research
+                indeed found that the latest generation of weavers asked more questions of their teachers in the course
+                of
+                learning, which, we argue, is indicative of the change in the social ecology from the earlier
+                generations
+                toward more Gesellschaft-adapted learning environments and a subsequent shift toward
+                Gesellschaft-adapted
+                cognitive development.</p>
+              <p>These findings are very applicable for teachers. Many children in the United States and Europe come
+                from
+                immigrant families in which parents are from rural more Gemeinschaft environments than the environment
+                of
+                their host country. In such communities, questions can be considered a mark of disrespect; agricultural
+                workers in California from Mexico or Central America provide an example of this cultural interpretation
+                (Delgado-Gaitan, <span class="ref-lnk lazy-ref bibr"><a data-rid="CIT0023" href="#"
+                    data-behaviour="toggle-ref" data-ref-type="bibr" data-label="reference"><span
+                      class="off-screen">Citation</span>1994</a></span>). Children from such environments are socialized
+                to show respect to parents and teachers by NOT asking questions.</p>
+              <p>What teachers can take away from this analysis and our findings is that children brought up in this way
+                may not engage in the question-asking valued in school. When children have experienced this type of
+                cultural socialization, teachers can learn from our research to treat the absence of children’s
+                questions
+                as a cultural trait rather than a cognitive deficit. However, because questions are valued in the host
+                culture, teachers can also be explicit about the difference between home and school cultures and, early
+                in
+                their education, gently guide children toward the question-asking so important and valued in formal
+                education.</p>
+              <p>In addition to environmental influences on the presence vs. absence of learner questions, there are
+                also
+                ecological factors in the types of questions that are relevant and valued. Much of the research
+                regarding
+                children’s questions, at least with U.S. samples, highlights different types of questions than the ones
+                the most recent generation of weaving learners were asking. For instance, Chouinard et&nbsp;al. (<span
+                  class="ref-lnk lazy-ref bibr"><a data-rid="CIT0017" href="#" data-behaviour="toggle-ref"
+                    data-ref-type="bibr" data-label="reference"><span class="off-screen">Citation</span>2007</a></span>)
+                report that preschool children’s questions tend to be fact or causal explanation seeking. The Zinacantec
+                weaving learners' questions concerned learning the procedure. We argue that the differences in the types
+                of questions students ask in the weaving environment or in formal schooling are not just a matter of age
+                difference, but also reflect the different goals of the two learning environments. So, children in
+                school
+                might not be asking about procedures, because theoretical knowledge and not procedures are the center of
+                schooling; insofar as procedures are involved—such as in science class labs—these are not done for their
+                own sake but in the service of theoretical learning. This contrasts with the tasks of teaching and
+                learning to weave. But that different types of environment entail very different tasks is precisely the
+                point. Teaching and learning, and children’s cognitive developmental tasks are adapted to the learning
+                environment.</p>
+              <p>Direct application to classroom teaching is also possible. Author Childs, who teaches sixth graders in
+                the U.S., has applied our research in a very concrete way to teach about cultural relativity, more
+                specifically, to teach students that children are taught differently in different ecological
+                circumstances. She sets up a backstrap loom in a classroom, demonstrates how weaving is done, and then
+                asks a student to get into the loom. She then provides a demonstration of teaching as it was done in our
+                first generation of weaving learners: criticism rather than praise; imperatives rather than questions;
+                observation rather than doing; replication rather than innovation. She also explains that in such an
+                environment, education takes place primarily at home rather than at school. She points out that these
+                are
+                teaching and learning procedures they have probably never even imagined exist. While many of the
+                students
+                find Childs' demonstration quite alien, a number of them come to understand something about profound
+                cultural differences; hence the demonstration functions as a lesson in cultural relativity.</p>
+              <p class="last">Childs also points out to her students that, as Zinacantec Maya environments have become
+                more like ours, most recently with increased opportunities for formal education, teaching and learning
+                procedures have also become more like ours. She uses her example of backstrap-loom weaving in Nabenchauk
+                to teach that modes of teaching and learning are adapted to particular environments and that they
+                therefore change as environments shift over time. This innovative application of the research is a
+                concrete, valuable example of using it in an educational setting.</p>
+            </div>
+          </div>
+        </div>
+        <div id="ack" class="NLM_sec">
+          <h3 class="section-heading-3" id="d1e1621">Acknowledgements</h3>
+          <p class="last">Our third wave of data collection (2012) was supported by grants from the Spencer Foundation,
+            UC
+            MEXUS, and the UCLA Latin American Institute. The UCLA Center for the Study of Women provided financial
+            administration. Grateful thanks to our field assistant, Maruch Ch’entik, who also assisted with the second
+            wave of data collection in 1991. Finally, we thank our study participants in Nabenchauk, many of whom are
+            the
+            third generation of their families to participate in our studies.</p>
+        </div>
+        <div class="NLM_sec NLM_sec_level_1" id="S0006">
+          <h2 class="section-heading-2" id="d1e835">Data availability statement</h2>
+          <p class="last">The data that support the findings of this study are available from the corresponding author,
+            Ashley Maynard, upon reasonable request.</p>
+        </div>
+        <div id="coi-statement" class="NLM_sec">
+          <h2 class="section-heading-2" id="d1e1624">Disclosure statement</h2>
+          <p class="last">No potential conflict of interest was reported by the authors.</p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;flex-direction: column;gap: 20px;">
+      <div class="inputs">
+        <input type="checkbox" id="boldCheckbox" onchange="toggleHighlight('bold')" />
+        <label for="boldCheckbox">Highlight Bold Text</label>
+        <br />
+        <input type="checkbox" id="italicCheckbox" onchange="toggleHighlight('italic')" />
+        <label for="italicCheckbox">Highlight Italic Text</label>
+        <br />
+        <input type="checkbox" id="quoteCheckbox" onchange="toggleHighlight('quote')" />
+        <label for="quoteCheckbox">Highlight Quotes</label>
+        <br />
+        <input type="checkbox" id="linkCheckbox" onchange="toggleHighlight('link')" />
+        <label for="linkCheckbox">Highlight Links</label>
+        <br />
+        <input type="checkbox" id="figcaptionCheckbox" onchange="toggleHighlight('figcaption')" />
+        <label for="linkCheckbox">Highlight Captions</label>
+        <br />
+        <input type="checkbox" id="h2checkbox" onchange="toggleHighlight('h2')" />
+        <label for="linkCheckbox">Highlight HeadTitles</label>
+        <br />
+        <input type="checkbox" id="h3checkbox" onchange="toggleHighlight('h3')" />
+        <label for="linkCheckbox">Highlight Titles</label>
+        <br />
+      </div>
+
+      <div class="articleLinks inputs">
+        <h2>Articles</h2>
+      <ul>
+        <li><a href="./technology.html" title="Technology has become an integral part of our lives.">Technology has
+            become an integral part of our lives.</a>
+        </li>
+        <li><a href="./education.html" title="Social change, cultural evolution, weaving apprenticeship, and development: informal
+          education across three generations and 42 years in a Maya community">Social change, cultural evolution,
+            weaving apprenticeship, and development: informal
+            education across three generations and 42 years in a Maya community</a>
+        </li>
+        <li><a href="./fashion.html" title="Fashion
+        has a very long history. ">Fashion
+            has a very long history. </a>
+        </li>
+      </ul>
+    </div>
+    <div class="titleIdsDiv inputs">
+      <h3>In This Article</h3>
+    </div>
+    </div>
+  </div>
+  <!-- footer -->
+
+
+ 
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <img src="./images/logo.png" alt="logo" width="100px" />
+          <h1>Evolution</h1>
+          <p>Join us as we unravel the rich
+            tapestry of cultural evolution, celebrating the triumphs, challenges, and enduring legacies that
+            define who we are and where we are headed. Evolution: where the past meets the present, and the
+            future awaits.</p>
+        </div>
+        <div class="footer__link--items">
+          <h2>Pages</h2>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#description">Description</a>
+          <a href="/">Disclaimer</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Articles</h2>
+         <a href="fashion.html">Fashion</a>
+          <a href="education.html">Education</a>
+          <a href="technology.html">Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for discailmer  -->
+
+
+  <section class="modal hidden">
+    <div class="flex">
+      <img src="./images/revolution.jpg" width="50px" height="50px" alt="user" />
+      <button class="btn-close">⨉</button>
+    </div>
+    <div>
+      <h3>Stay in touch</h3>
+      <p>
+        Evolution is where we delve into history with a focus on typographical and color aesthetics. Our articles are
+        crafted with two distinct themes: the Historical Theme, reflecting typographical styles from the 16th to the
+        19th centuries, and the Antique Theme, which embraces the transition from early 20th-century print aesthetics to
+        modern color schemes.
+
+        As you explore our content, you'll notice subtle typographical changes and color palettes inspired by each
+        theme. The metadata integrated throughout our articles further enhances the visual experience, highlighting key
+        elements and providing context.
+
+        Please note that the sample websites referenced serve as resources to illustrate the evolution of typographical
+        and color trends. Their inclusion does not imply endorsement or affiliation.
+
+        Thank you for joining us on this journey through history, where typography and color bring the past to life in
+        vibrant detail.
+
+        Warm regards,
+      </p>
+    </div>
+
+    <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+    <button class="btn btn_ok">Ok</button>
+  </section>
+  <div class="overlay hidden"></div>
+  <script src="app.js"></script>
+  <script>
+    function toggleHighlight(type) {
+      const article = document.getElementById("article");
+
+      switch (type) {
+        case "bold":
+          article.classList.toggle("highlight-bold");
+          break;
+        case "italic":
+          article.classList.toggle("highlight-italic");
+          break;
+        case "quote":
+          article.classList.toggle("highlight-quote");
+          break;
+        case "link":
+          article.classList.toggle("highlight-link");
+          break;
+        case "figcaption":
+          article.classList.toggle("highlight-figcaption");
+          break;
+        case "h2":
+          article.classList.toggle("highlight-h2");
+          break;
+        case "h3":
+          article.classList.toggle("highlight-h3");
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+
+</html>

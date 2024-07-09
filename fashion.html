@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet/less"  type="text/css" href="style.less"> -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><img src="./images/logo.png" alt="logo" height="85%" />Evolution</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"> <a href="/" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 576 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>
+            Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+            </svg>
+            About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#description" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+            Description</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./articles.html" class="navbar__links">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z" />
+            </svg>Articles</a>
+        </li>
+        <li class="navbar__btn">
+          <!-- <button class="btn btn-open">Open Modal</button> -->
+          <a href="#disclaimer" id="sign_up_info" class="button btn btn-open">Disclaimer</a>
+        </li>
+      </ul>
+  </nav>
+  <form class="color-picker" action="">
+    <fieldset>
+      <legend class="visually-hidden">Pick a color scheme</legend>
+      <label for="light" class="visually-hidden">Light</label>
+      <input type="radio" name="theme" id="light" checked>
+  
+      <label for="pink" class="visualy-hidden">1500-1800</label>
+      <input type="radio" id="pink" name="theme">
+  
+      <label for="blue" class="visualy-hidden">Early 20th</label>
+      <input type="radio" id="blue" name="theme">
+  
+      <label for="green" class="visualy-hidden">21st</label>
+      <input type="radio" id="green" name="theme">
+  
+      <label for="dark" class="visualy-hidden">Dark theme</label>
+      <input type="radio" id="dark" name="theme">
+    </fieldset>
+  </form>
+  <!-- the main part  -->
+      <div class="cs-entry__content-wrap">
+
+       
+        <div class="entry-content" id="article">
+          <p>Fashion
+            has a very long history. It began somewhere around Ancient Times, and
+            has led to important inventions and evolved century after century until
+            the present day.&nbsp;</p>
+          <p>The 20th century has seen, undoubtedly, the
+            most radical evolution of fashion from one decade to the next. It’s
+            during that time that the world’s greatest designers and big fashion
+            houses saw the day, releasing countless iconic pieces and sparking
+            trends to which fashion historians and professionals refer most today.
+            With the rise of globalization, technology, social media, and new
+            designers, the 21th century has also brought a rapid evolution in the
+            fashion industry.&nbsp;</p>
+          <p>All of the time periods are worth studying
+            for anyone interested in fashion. However, in this article, we are
+            going to cover the relatively recent fashion history from the 1900s
+            until the present day. We will explain briefly what were the predominant
+            styles of each decade, how they were born, and what were the major
+            cultural movements and designers to popularize them. We hope this piece
+            provides you with a comprehensive overview of the most important things
+            you have to retain from the history of fashion, as this is a must-know
+            for anyone who wants to work in this field. So, without further ado,
+            let’s delve into the fascinating history of fashion through the
+            decades.&nbsp;</p>
+          <h2 id="the-history-of-fashion-through-the-decades" class="wp-block-heading has-text-align-center"><strong>The
+              History of Fashion Through The
+              Decades</strong></h2>
+          <h3 id="1900s" class="wp-block-heading"><strong>1900s </strong></h3>
+          <p>The main fashion trend of the first decade of the 20th century was the<strong> S-shape
+              silhouette</strong>
+            that pushed the chest forward and the hips back. However, towards the
+            end of the decade, women embraced a more natural silhouette.</p>
+          <p>Day
+            dresses would cover the body from the neck to the floor and had long
+            sleeves. Evening dresses largely followed the same silhouette. Though
+            these gowns were more revealing with very low décolletage and short
+            sleeves, which often called for long gloves.</p>
+          <p>When <strong>sports</strong>
+            broke into fashion at the beginning of the 20th century, such as golf,
+            tennis, cycling, and motoring that were practiced by men and women, they
+            all inspired their own clothing styles.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img decoding="async" width="500"
+                    height="682" src="./images/f1.jpg" alt="1900s fashion" class="wp-image-43276 pk-pin-it-ready"
+                    style="width:342px;height:465px" title="1900s fashion" sizes="(max-width: 500px) 100vw, 500px">
+                  <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="404" height="600" src="./images/f2.jpg" alt="1900s fashion history"
+                    class="wp-image-43278 pk-pin-it-ready" style="width:312px;height:464px"
+                    title="1900s fashion history">
+                  <figcaption class="wp-element-caption">Source: the MET</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3 id="1910s" class="wp-block-heading"><strong>1910s</strong></h3>
+          <p>The
+            second decade of the 20th century began with a shift from corsetry and
+            S-shape silhouettes to more natural forms. Designers such as<strong> Paul Poiret, Lucile (Lady
+              Duff Gordon), Georges Doeuillet, and Jacques Doucet </strong>revolutionized
+            fashion in that regard. They were in favor of less restrictive clothes.
+            And designed pieces that defined the more natural contours of the
+            female form. That’s how <strong>empire dresses,</strong> which were popular at the beginning
+            of the 19th century came back into fashion.&nbsp;</p>
+          <p>An important development at the beginning of the decade was the rise of
+            <strong>Orientalism</strong> with The Ballets Russes which performed <em>Schéhérazade</em>
+            (a ballet based on One Thousand and One Nights) in Paris in 1910.
+            Influenced by this movement, Paul Poiret introduced “harem” pantaloons
+            and The Fancy Dress costume in 1911. The same year, he introduced the
+            famous <strong>“hobble skirt”</strong>. But it soon proved to be near impossible to move in
+            and thus became unpopular.
+          </p>
+          <p>The
+            outbreak of World War I pushed the need for practicality even more.
+            Women worked in munitions factories for the war effort, so they began to
+            wear <strong>utilitarian clothing</strong>.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="387" height="600" src="./images/f3.jpg" alt="1910s clothing"
+                    class="wp-image-43280 pk-pin-it-ready" style="width:324px;height:502px" title="1910s clothing">
+                  <figcaption class="wp-element-caption">Source: Wikipedia</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="364" height="633" src="./images/f4.jpg"
+                    alt="1910s clothing | The History of Fashion Through The Decades"
+                    class="wp-image-43282 pk-pin-it-ready" style="width:288px;height:502px">
+                  <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3 id="1920s" class="wp-block-heading"><strong>1920s</strong></h3>
+          <p>The
+            1920s are often remembered as the Age of glitz, jazz, and glamour.
+            However, despite this, the twenties were also marked by simplicity and
+            practicality. Because after the end of the Great War, women wanted more
+            minimalistic and comfortable clothing. Which meant no more corsets,
+            crinolines, bustle skirts, and other pieces characteristic of the
+            Victorian era.&nbsp;</p>
+          <p>The new popular fashion trend was <strong>“the flapper look”</strong>,
+            also know as “la garçonne”, boyish look. The flapper dress was
+            characterized by a dropped waist, hemlines that rose to just below the
+            knee, and simplicity in construction. The androgynous silhouette
+            introduced a new notion of a feminine look. And was mainly popularized
+            by Coco Chanel (we wrote about Coco Chanel history <a
+              href="https://glamobserver.com/history-of-designers-gabrielle-coco-chanel/" target="_blank"
+              rel="noreferrer noopener follow" data-wpel-link="internal">here</a>).&nbsp;</p>
+          <p>Another trend that dominated the 1920s was Jeanne Lanvin’s more romantic version of a
+            feminine dress – the <strong>“Robe de style”</strong>.</p>
+          <p><strong>Sportswear</strong>
+            became even more acceptable to wear for women during this decade. Elsa
+            Schiaparelli, Coco Chanel, and Jean Patou are regarded as the main
+            designers to revolutionize women’s sportswear.</p>
+          <p>The styles of the
+            20s contributed to the “democratization” of fashion. Any woman could
+            achieve a fashionable look. With more simple clothes, made with less
+            expensive materials and easy to put on, more women could afford to dress
+            well for every occasion.&nbsp;</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large pk-pin-it-container"><img loading="lazy" decoding="async"
+                  width="250" height="300" src="./images/f5.jpg" alt="1920s fashion"
+                  class="wp-image-43284 pk-pin-it-ready" title="1920s fashion" sizes="(max-width: 789px) 100vw, 789px">
+                <figcaption class="wp-element-caption">Flapper look. Source: Flapper style</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-full is-resized pk-pin-it-container"><img loading="lazy"
+                  decoding="async" width="306" height="500" src="./images/f6.jpg" alt="Robe de style"
+                  class="wp-image-43286 pk-pin-it-ready" style="width:210px;height:343px" title="Robe de style">
+                <figcaption class="wp-element-caption">Robe de style. Source: Vintage Dancer</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-full is-resized pk-pin-it-container"><img loading="lazy"
+                  decoding="async" width="254" height="400" src="./images/f7.jpg"
+                  alt="The History of Fashion Through The Decades" class="wp-image-43288 pk-pin-it-ready"
+                  style="width:217px;height:342px" title="Sportswear 1920s">
+                <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h3 id="1930s" class="wp-block-heading"><strong>1930s</strong></h3>
+          <p>Women’s
+            fashion softly transitioned from the boyish look of the previous decade
+            into the feminine silhouette of the early thirties. One of the most
+            important trends was the <strong>bias cut</strong>, a technique that allows the fabric to
+            drape over the body (see picture below).&nbsp;</p>
+          <p>In
+            addition, the cinema of the 30s and specifically Hollywood had a great
+            impact on fashion. Movie stars like Greta Garbo, Marlene Dietrich, and
+            Bette Davis, among others, became some of the first Hollywood style
+            icons.&nbsp;</p>
+          <div class="wp-block-image">
+            <figure class="aligncenter size-full pk-pin-it-container"><img loading="lazy" decoding="async" width="236"
+                height="308" src="./images/f8.jpg" alt="1930s bias cut" class="wp-image-43290 pk-pin-it-ready"
+                title="1930s bias cut">
+              <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+            </figure>
+          </div>
+          <h3 id="1940s" class="wp-block-heading"><strong>1940s</strong></h3>
+          <p>With
+            the outbreak of World War II that led to a shortage of materials and
+            rationing, fashion became practical with uniforms for men and women who
+            served during the war, and <strong>utility clothing </strong>for other citizens. A common look
+            had padded shoulders, cinched waist, and hemlines below the knee.</p>
+          <p>One of the results of rationing was the <strong>invention of the bikini in 1946 </strong>by
+            Jacques Heim (it was called “Atome”, suggesting that the bikini was as
+            small as an atom) and Louis Reard (he was inspired by an atoll in the
+            Marshall Islands that the United States had chosen to target its atomic
+            bombs) “The Atome” and “The Bikini” were seen by both designers as
+            metaphors for the explosion, which was the exact effect the bikini had
+            on fashion and society in the 40s.</p>
+          <p>After the war, Christian Dior (we covered Christian Dior history <a
+              href="https://glamobserver.com/history-of-designers-christian-dior/" target="_blank"
+              rel="noreferrer noopener follow" data-wpel-link="internal">here</a>) introduced his
+            iconic<strong> “New Look” in 1947</strong>,
+            which was a groundbreaking design, much ahead of its time with the
+            cinched-in waist and embodied full skirt. The fashion world had never
+            seen such elaborate designs, using an abundance of fabric to create his
+            lavish, elegant look to celebrate women; it was unheard of to use so
+            much fabric in a time pre-war was full of rationing. But Dior wanted to
+            celebrate life after the war and embrace women’s beauty and feminity
+            encouraging joy and extravagance again.&nbsp;</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="alignright size-large is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="500" height="500" src="./images/f9.jpg" alt="1940s fashion"
+                    class="wp-image-43292 pk-pin-it-ready" style="width:249px;height:249px" title="1940s fashion"
+                    sizes="(max-width: 1024px) 100vw, 1024px">
+                  <figcaption class="wp-element-caption">Source: Vogue</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="192" height="262" src="./images/f10.jpg" alt="1940s swimsuit"
+                    class="wp-image-43294 pk-pin-it-ready" style="width:238px;height:325px" title="1940s swimsuit">
+                  <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-full is-resized pk-pin-it-container"><img loading="lazy"
+                  decoding="async" width="236" height="307" src="./images/f11.jpg"
+                  alt="The History of Fashion Through The Decades" class="wp-image-43296 pk-pin-it-ready"
+                  style="width:248px;height:323px" title="1947 new look fashion">
+                <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h3 id="1950s" class="wp-block-heading"><strong>1950s</strong></h3>
+          <p>After
+            years of war marked by rationing and rather strict and sober
+            silhouettes, women had the desire to dress up and look stylish. And so,
+            the 50s were characterized by feminine and elegant silhouettes, with
+            cinched waists and full dresses and skirts.&nbsp;</p>
+          <p>Dior’s ”New
+            Look” remained popular. However, the decade saw the emergence of other
+            silhouettes as well, which in contrast were straighter and slimmer. A
+            good example is <strong><a href="https://glamobserver.com/the-history-and-evolution-of-balenciaga/"
+                target="_blank" rel="noreferrer noopener follow" data-wpel-link="internal">Cristobal Balenciaga’s
+              </a>“Sack dress” from 1957</strong>.
+            This fashion design shocked the world, as he pioneered never before
+            seen silhouettes in women’s fashion. He went in a completely different
+            direction than Dior with the broad shoulders and box shapes of the Sack
+            Dress. Contrary to Dior, Balenciaga gave volume to his dresses and
+            skirts through the skillful manipulation of the fabric. While Dior had
+            to rely on built-in corsetry and layered underskirts to achieve volume.
+            Another difference between them is the weight: the Balenciaga gown is
+            only 2.2 pounds. While the Dior garment weighs over 9 pounds.&nbsp;</p>
+          <p>Another designer who rivaled the Dior New Look was <strong>Coco Chanel</strong>. She reopened
+            her business in 1954 and reintroduced her signature<strong> slim look </strong>with boxy
+            jackets and straight skirts.&nbsp;</p>
+          <p>As
+            you can see, the 50s brought Dior, Balenciaga, and Chanel as the
+            leaders of Paris couture. However, the way they revolutionized women’s
+            fashion is radically different.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-5 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="291" height="600" src="./images/f12.jpg"
+                    alt="Chanel suit | The History of Fashion Through The Decades"
+                    class="wp-image-43298 pk-pin-it-ready" style="width:228px;height:470px" title="Chanel suit">
+                  <figcaption class="wp-element-caption">Chanel suit. Source: the MET</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-large is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="576" height="1024" src="./images/f13.jpg"
+                    alt="The Sack dress | The History of Fashion Through The Decades"
+                    class="wp-image-43300 pk-pin-it-ready" style="width:263px;height:467px" title="The Sack dress"
+                    sizes="(max-width: 576px) 100vw, 576px">
+                  <figcaption class="wp-element-caption">The Sack dress. Source: Vogue</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3 id="1960s" class="wp-block-heading"><strong>1960s</strong></h3>
+          <p>In the early years of the decade, fashion continued along the lines of the 1950s.
+            <strong>First Lady Jacqueline Kennedy</strong>
+            was the style icon. And Hubert de Givenchy and Cristobal Balenciaga
+            were the major designers to popularize the feminine look still in
+            fashion.&nbsp;
+          </p>
+          <p>The mid of the decade was known as the <strong>“Swinging Sixties”</strong> – a cultural
+            phenomenon focusing on youth, spotlighting music and fashion. <strong>Mary Quant, André
+              Courrèges, Pierre Cardin, and Paco Rabanne</strong>
+            were among the first designers to understand the needs of modern women
+            by creating clothes that felt liberating, daring, and fun while staying
+            practical, and often they questioned conventional gender norms.</p>
+          <h6
+            id="the-first-revolutionary-design-was-the-miniskirt-whose-invention-is-credited-to-both-mary-quant-and-andre-courreges"
+            class="wp-block-heading">The first revolutionary design was the <strong>miniskirt</strong>
+            whose invention is credited to both Mary Quant and André Courrèges.</h6>
+          <p>Mary Quant made her contribution to the sexual liberation of women with trousers and
+            hotpants, as did <a href="https://glamobserver.com/history-of-designers-yves-saint-laurent/" target="_blank"
+              rel="noreferrer noopener follow" data-wpel-link="internal">Yves Saint
+              Laurent</a>
+            when he invented the first tuxedo for women. With the popularity of
+            androgynous looks, even the models changed. The era’s most high-profile
+            model was <strong>Twiggy</strong>.&nbsp;</p>
+          <p>New <strong>innovative materials</strong>
+            were introduced, such as acrylics, polyesters, PVC (polyvinyl
+            chloride), vinyl, lycra, and metallics. Bright colors began replacing
+            the sober palette of the previous decades.&nbsp;</p>
+          <p>It was the era of <strong>futuristic fashion</strong>,
+            as designers were inspired by space travel and technology. As we can
+            see with Courrèges’s “Moon boots”, and Rabanne’s “12 unwearable dresses
+            collection from 1966.</p>
+          <p>We also have to cite Pierre Cardin, who took inspiration from<strong> Pop Art and Op Art
+            </strong>to
+            experiment with motifs, geometry, and colors. See his “Egg carton
+            dress” from his landmark 1968 “Cosmocorps” collection, and the “Bubble
+            dress”. Courrèges also had a passion for exploring geometry and wanted
+            to reflect his passion for architecture in his clothes. The designer cut
+            his garments in squares, triangles, and trapezoids, all of which were
+            considered ingenious and striking shapes, and questioned the notion of
+            traditional feminity after the 50s – a time when dominated the use of
+            the perfect hourglass silhouette.&nbsp;</p>
+          <p>By the late 1960s, fashion began transitioning towards the <strong>hippie aesthetic
+            </strong>which
+            was a way of rejecting mainstream fashion. Yes, although it’s the 70s
+            that are associated with the hippie look, it actually appeared in the
+            late 60s.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-6 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-full is-resized pk-pin-it-container"><img loading="lazy"
+                  decoding="async" width="371" height="500" src="./images/f14.jpg" alt="Twiggy in Miniskirt"
+                  class="wp-image-43302 pk-pin-it-ready" style="width:244px;height:351px" title="Twiggy in Miniskirt">
+                <figcaption class="wp-element-caption">Twiggy in Miniskirt. Source: Pinterest</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="300" height="450" src="./images/f15.jpg"
+                    alt="The History of Fashion Through The Decades" class="wp-image-43308 pk-pin-it-ready"
+                    style="width:224px;height:366px" title="Egg-carton dress">
+                  <figcaption class="wp-element-caption">Egg-carton dress. Source: Vogue</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-full is-resized pk-pin-it-container"><img loading="lazy"
+                    decoding="async" width="789" height="960" src="./images/f16.jpg"
+                    alt="Paco Rabanne dress | The History of Fashion Through The Decades"
+                    class="wp-image-43306 pk-pin-it-ready" style="width:280px;height:320px" title="Paco Rabanne dress"
+                    sizes="(max-width: 789px) 100vw, 789px">
+                  <figcaption class="wp-element-caption">Paco Rabanne dress. Source: Grazia</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3 id="1970s" class="wp-block-heading"><strong>1970s</strong></h3>
+          <p>The decade saw a wide range of popular fashions. Of course, the hippie style was in vogue,
+            particularly with the <strong>prairie dresses</strong>
+            that were incorporated into high fashion collections. Patchwork,
+            crochet and knitting, embroidery and synthetic materials for which the
+            70s became known as the “Polyester decade” were common fashion trends.</p>
+          <p>Later in the decade, the hippie style left room for the glamorous looks of <strong>“the disco
+              era”</strong> with designer Halston up front.&nbsp;</p>
+          <p>In the early- to mid-seventies, some designers responded to the sexual freedom of women. For
+            example, in 1971, <strong>Yves Saint Laurent</strong> launched a 1940s-inspired collection
+            <strong>“Libération”</strong>, and <strong>Diane Von Furstenberg</strong> released her
+            timeless <strong>“Wrap dress”</strong>.
+          </p>
+          <p>Finally,
+            sportswear made, once again like in the early decades of the 20th
+            century, its entry into women’s fashion. It was mostly popularized by <strong>Norma
+              Kamali</strong> with her iconic “Sleeping bag coat”, sweats, and a “Parachute” collection of
+            dresses and jumpsuits.&nbsp;</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-7 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-full pk-pin-it-container"><img loading="lazy" decoding="async"
+                  width="218" height="340" src="./images/f17.jpg" alt="1970s dresses"
+                  class="wp-image-43310 pk-pin-it-ready" title="1970s dresses" sizes="(max-width: 418px) 100vw, 318px">
+                <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large is-resized pk-pin-it-container"><img decoding="async"
+                  src="./images/f18.webp" alt="1970s women's fashion" style="width:244px;height:405px"
+                  title="1970s women's fashion" class="pk-pin-it-ready">
+                <figcaption class="wp-element-caption">Source: Refinery29</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large is-resized pk-pin-it-container"><img decoding="async"
+                  src="./images/f19.avif" alt="Sleeping bag coat" style="width:269px;height:403px"
+                  title="Sleeping bag coat" class="pk-pin-it-ready">
+                <figcaption class="wp-element-caption">Source: Financial Times</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h3 id="1980s" class="wp-block-heading"><strong>1980s</strong></h3>
+          <p>The
+            80s was a decade of cultural transformation and the expression of
+            individuality. People were no longer afraid to be who they were, and
+            that mentality was reflected in their fashion choices. They like
+            extravagant styles, bold colors, and accessories were a must. Neon
+            clothes and jumpsuits were a thing, too. Christian Lacroix, Jean-Paul
+            Gaultier, Versace, and Karl Lagerfeld for Chanel, among other fashion
+            designers, responded to that trend.&nbsp;</p>
+          <p>The increasing <strong>popularity of fitness</strong>
+            seen in iconic movies like“Dirty Dancing” and “Flashback” inspired
+            off-the-shoulder sweatshirts, sport shorts, spandex, leggings, leg
+            warmers, and headbands.&nbsp;</p>
+          <p>Music in the 1980s had a great influence on fashion: <strong>pop music</strong> (big
+            hairstyles, glitter makeup, lots of jewelry);<strong> punk</strong>
+            (tartan clothing, Doc Martens, leather, and fishnet (Vivienne Westwood
+            opened the decade with stylish sportswear and the soft “New Romantics”
+            style with her 1981 “Pirate” collection) and <strong>Hip Hop</strong> (loose fitting jeans,
+            sneakers, etc.).</p>
+          <p>As
+            more women began to work and occupy high-level positions, they were in
+            need of a new wardrobe. That’s how jackets with padded shoulders (see
+            suits by Emanuel Ungaro and Thierry Mugler), bold accessories, and high
+            heels made their entry. Princess Diana, Nancy Reagan, and Margaret
+            Thatcher all popularized the fashion trend of <strong>“power suits”</strong>.</p>
+          <p>On the other hand, American designers such as <strong>Perry Ellis and Ralph Lauren</strong>
+            were turning to a more classic and casual style with the <strong>“preppy look”</strong>.
+            Which was influenced by traditional Ivy League and Seven Sisters Style,
+            as well as the dress of early&nbsp; 20th century British aristocrats.</p>
+          <p>Finally, a shocking new type of fashion emerged from <strong>Japan </strong>and differed from
+            the Western styles. Designers such as <strong>Comme des Garçons’ Rei Kawakubo and Yohji
+              Yamamoto</strong> employed deconstruction, exaggerated proportions, and presented black as
+            the new <em>it</em> color.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-8 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="alignleft size-large is-resized pk-pin-it-container"><img decoding="async"
+                    src="./images/f20.jpg" alt="1980s fashion" style="width:471px;height:354px" title="1980s fashion"
+                    class="pk-pin-it-ready">
+                  <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="alignright size-large is-resized pk-pin-it-container"><img decoding="async"
+                    src="./images/f21.jpg" alt="1980s clothing | The History of Fashion Through The Decades"
+                    style="width:328px;height:410px" title="1980s clothing" class="pk-pin-it-ready">
+                  <figcaption class="wp-element-caption">Source: the VOU</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3 id="1990s" class="wp-block-heading"><strong>1990s</strong></h3>
+          <p>The beginning of the 1990s was the peak of the <strong>Supermodel era</strong>.
+            Among the most celebrated were Linda Evangelista, Cindy Crawford, Naomi
+            Campbell, and Christy Turlington, known as “the original supermodels”.</p>
+          <p>The <strong>sportswear</strong>
+            looks of the eighties continued into the early nineties with biker
+            shorts, leggings, Keds, and oversized sweatshirts continuing to be
+            favorite choices for young women.&nbsp;</p>
+          <p>Then, fashion towards a more casual style of dressing and <strong>minimalism</strong>.
+            The slip dress was the biggest fashion trend. The supermodels were
+            replaced by the “heroin chic” models, a type of model epitomized by Kate
+            Moss.&nbsp;</p>
+          <p>The three main subcultures of the 90s were <strong>Grunge fashion </strong>pioneered by Marc
+            Jacobs and Alexander McQueen, (loose-fitting, worn-out jeans, flannel shirts, Doc Martens, and
+            chunky boots) <strong>the preppy style</strong>, (oversized shirts, high-waisted jeans, plaid
+            mini-skirts) and <strong>Punk</strong>
+            (black leather jackets, ripped jeans, choker necklaces). In addition,
+            women wore overalls, swirl patterns, leopard print, scrunchies,
+            bandanas, crop tops, tie-dye…</p>
+          <p>The music and film industry with
+            Destiny’s child, The Spice Girls, Clueless, The Fresh Prince of Bel-Air,
+            Britney Spears…influenced these popular fashion trends of the 90s.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-9 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="alignright size-large is-resized pk-pin-it-container"><img decoding="async"
+                    src="./images/f22.jpg" alt="1990s fashion" style="width:304px;height:321px" title="1990s fashion"
+                    class="pk-pin-it-ready">
+                  <figcaption class="wp-element-caption">Source: Who What Wear UK</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-large is-resized pk-pin-it-container"><img decoding="async"
+                    src="./images/f23.jpg" alt="1990s denim fashion" style="width:213px;height:330px"
+                    title="1990s denim fashion" class="pk-pin-it-ready">
+                  <figcaption class="wp-element-caption">Source: FIT</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large is-resized pk-pin-it-container"><img decoding="async"
+                  src="./images/f27.webp" alt="1990s fashion show" style="width:217px;height:326px"
+                  title="1990s fashion show" class="pk-pin-it-ready">
+                <figcaption class="wp-element-caption">Source: Vogue</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h3 id="2000s" class="wp-block-heading"><strong>2000s</strong></h3>
+          <p>Fashion at the rise of the 21th century was similar to the one in the late 1990s. But due to
+            globalization<strong> </strong>and the rise of <strong>fast fashion</strong>,
+            when affordable clothes inspired by runway designs can now be found in
+            department stores like Mervyn’s, J.C. Penney, and Macy’s) fashion trends
+            became even more widespread. Moreover, celebrities and characters from
+            TV shows such as <em>The OC, One Tree Hill, and Gossip Girl </em>were <em>the</em> style icons
+            of the decade and influenced many people.&nbsp;</p>
+          <p>Fashion was also marked by the rapid development of<strong> technology</strong>, which
+            translated into fashion. The <em>Matrix </em>movie
+            in particular inspired a few designers like Balenciaga, Calvin Klein,
+            and Yves Saint Laurent to use almost exclusively black for their Fall
+            2001 collections.</p>
+          <p>After the tragic events of 9/11, fashion
+            returned to conservatism, casual clothing, and leisurewear, and the most
+            dominant item was <strong>jeans</strong>. Its style evolved throughout
+            the years: low-rise, bell-bottom pants, skinny, ripped, or otherwise
+            worn jeans. They became an acceptable item to wear in nearly all
+            occasions. Sneakers were an important part of the look, especially retro
+            Nike Air Jordan’s and Adidas Yeezys. Platform heels and Ugg boots were
+            also in fashion. Another trendy piece was the <strong>tracksuit</strong>, worn by the likes of
+            Jennifer Lopez, Paris Hilton, Britney Spears, and TV show actresses.&nbsp;</p>
+          <p>The predominant looks of the decade were the <strong>bohemian</strong> (or boho) look that
+            replaced the grunge look of the nineties (vintage and handmade clothing was in vogue),<strong>
+              hip-hop, streetwear, Y2K, scene, emo, and athleisurewear</strong>. These different
+            subcultures of the 2000s influenced fashion in different ways.</p>
+          <div
+            class="wp-block-columns is-layout-flex wp-container-core-columns-layout-10 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large is-resized pk-pin-it-container"><img decoding="async"
+                  src="./images/f24.jpg " alt="2000s clothing" style="width:250px;height:376px" title="2000s clothing"
+                  class="pk-pin-it-ready">
+                <figcaption class="wp-element-caption">Source: Instyle</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large is-resized pk-pin-it-container"><img decoding="async"
+                  src="./images/f25.jpg" alt="2000s fashion style" style="width:260px;height:374px"
+                  title="2000s fashion style" class="pk-pin-it-ready">
+                <figcaption class="wp-element-caption">Source: Pinterest</figcaption>
+              </figure>
+            </div>
+            <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <figure class="wp-block-image size-large is-resized pk-pin-it-container"><img decoding="async"
+                  src="./images/f26.png" alt="2000s fashion trend" style="width:246px;height:344px"
+                  title="2000s fashion trend" class="pk-pin-it-ready">
+                <figcaption class="wp-element-caption">Source: Buzzfeed</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h3 id="2010s" class="wp-block-heading"><strong>2010s</strong></h3>
+          <p>Throughout
+            the 2010s, many women wore workout gear not just for sport, but as
+            casual everyday wear. This style that emerged in the previous decade
+            with the tracksuit and came to be known as athleisure continued during
+            the 2010s.&nbsp;</p>
+          <p>Although before it was celebrities who partly dictated the trends, in the 2010s, it was
+            fashion <strong>bloggers and influencers</strong> due to the rise of social media.&nbsp;</p>
+          <p>There was also a <strong>return to maximalism</strong>
+            from the 1980s. A pivotal moment was in 2015 when Alessandro Michele
+            took over as creative director of Gucci (we talked about the history of
+            Gucci <a href="https://glamobserver.com/the-history-of-gucci/" target="_blank"
+              rel="noreferrer noopener follow" data-wpel-link="internal">here</a>)
+            and brought bright colors and bold textures to the collections. Other
+            designers supported this trend, like Demna Gvasalia for Balenciaga and
+            Hedi Slimane at Yves Saint Laurent.&nbsp;</p>
+          <p>Finally, besides the
+            trends themselves, the 2010s brought a bigger focus on sustainability
+            issues. Both consumers and companies began to speak about the impact of
+            fashion on the environment, and the working conditions of factory
+            workers.</p>
+          <h3 id="2020s" class="wp-block-heading"><strong>2020s</strong></h3>
+          <p>The outbreak of Covid had a long-lasting impact on fashion. People adopted cozy and practical
+            clothing, and <strong>activewear</strong> became a fashion trend again. The value of comfort
+            persisted after the lockdown, so the <strong>minimalism</strong>
+            of the 90s resurfaced. So far, the 2020s also brought back trends
+            characteristic of other decades, like mini dresses and skirts from the
+            60s, and the <strong>Y2K</strong> trend from the 2000s. Let’s see what the next years of the
+            decade will bring.</p>
+          <p>This
+            is it for now for the brief fashion history through the decades. We
+            went through the most important fashion trends, pieces, subcultures and
+            designers you need to know. And what’s your favorite decade in fashion?
+            We would love to hear from you. In the comments below.&nbsp;</p>
+          <p>Want to learn more in detail about the history of fashion? Enroll in our online course <a
+              href="https://courses.glamobserver.com/p/inside-the-fashion-industry" target="_blank"
+              rel="noreferrer noopener" data-wpel-link="external">Inside the fashion industry</a>.</p>
+          <p>If you want to transform your passion for fashion into a career in the industry, register for
+            our&nbsp;<a href="https://glamobserver.com/free-webinar/" target="_blank" rel="noreferrer noopener follow"
+              data-wpel-link="internal">free masterclass here to learn 3
+              top strategies to get a job in fashion</a>.</p>
+        </div> 
+        <div style="display: flex;flex-direction: column;gap: 20px;">
+          <div class="inputs">
+            <input type="checkbox" id="boldCheckbox" onchange="toggleHighlight('bold')" />
+            <label for="boldCheckbox">Highlight Bold Text</label>
+            <br />
+            <input type="checkbox" id="italicCheckbox" onchange="toggleHighlight('italic')" />
+            <label for="italicCheckbox">Highlight Italic Text</label>
+            <br />
+            <input type="checkbox" id="quoteCheckbox" onchange="toggleHighlight('quote')" />
+            <label for="quoteCheckbox">Highlight Quotes</label>
+            <br />
+            <input type="checkbox" id="linkCheckbox" onchange="toggleHighlight('link')" />
+            <label for="linkCheckbox">Highlight Links</label>
+            <br />
+            <input type="checkbox" id="figcaptionCheckbox" onchange="toggleHighlight('figcaption')" />
+            <label for="linkCheckbox">Highlight Captions</label>
+            <br />
+            <input type="checkbox" id="h2checkbox" onchange="toggleHighlight('h2')" />
+            <label for="linkCheckbox">Highlight HeadTitles</label>
+            <br />
+            <input type="checkbox" id="h3checkbox" onchange="toggleHighlight('h3')" />
+            <label for="linkCheckbox">Highlight Titles</label>
+            <br />
+          </div>
+    
+          <div class="articleLinks inputs">
+            <h2>Articles</h2>
+          <ul>
+            <li><a href="./technology.html" title="Technology has become an integral part of our lives.">Technology has
+                become an integral part of our lives.</a>
+            </li>
+            <li><a href="./education.html" title="Social change, cultural evolution, weaving apprenticeship, and development: informal
+              education across three generations and 42 years in a Maya community">Social change, cultural evolution,
+                weaving apprenticeship, and development: informal
+                education across three generations and 42 years in a Maya community</a>
+            </li>
+            <li><a href="./fashion.html" title="Fashion
+            has a very long history. ">Fashion
+                has a very long history. </a>
+            </li>
+          </ul>
+        </div>
+        <div class="titleIdsDiv inputs">
+          <h3>In This Article</h3>
+        </div>
+        </div>
+  </div>
+  <!-- footer -->
+
+
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <img src="./images/logo.png" alt="logo" width="100px" />
+          <h1>Evolution</h1>
+          <p>Join us as we unravel the rich
+            tapestry of cultural evolution, celebrating the triumphs, challenges, and enduring legacies that
+            define who we are and where we are headed. Evolution: where the past meets the present, and the
+            future awaits.</p>
+        </div>
+        <div class="footer__link--items">
+          <h2>Pages</h2>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#description">Description</a>
+          <a href="/">Disclaimer</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Articles</h2>
+         <a href="fashion.html">Fashion</a>
+          <a href="education.html">Education</a>
+          <a href="technology.html">Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for discailmer  -->
+
+
+  <section class="modal hidden">
+    <div class="flex">
+      <img src="./images/revolution.jpg" width="50px" height="50px" alt="user" />
+      <button class="btn-close">⨉</button>
+    </div>
+    <div>
+      <h3>Stay in touch</h3>
+      <p>
+        Evolution is where we delve into history with a focus on typographical and color aesthetics. Our articles are
+        crafted with two distinct themes: the Historical Theme, reflecting typographical styles from the 16th to the
+        19th centuries, and the Antique Theme, which embraces the transition from early 20th-century print aesthetics to
+        modern color schemes.
+
+        As you explore our content, you'll notice subtle typographical changes and color palettes inspired by each
+        theme. The metadata integrated throughout our articles further enhances the visual experience, highlighting key
+        elements and providing context.
+
+        Please note that the sample websites referenced serve as resources to illustrate the evolution of typographical
+        and color trends. Their inclusion does not imply endorsement or affiliation.
+
+        Thank you for joining us on this journey through history, where typography and color bring the past to life in
+        vibrant detail.
+
+        Warm regards,
+      </p>
+    </div>
+
+    <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+    <button class="btn btn_ok">Ok</button>
+  </section>
+  <div class="overlay hidden"></div>
+  <script src="app.js"></script>
+  <script>
+    function toggleHighlight(type) {
+      const article = document.getElementById("article");
+
+      switch (type) {
+        case "bold":
+          article.classList.toggle("highlight-bold");
+          break;
+        case "italic":
+          article.classList.toggle("highlight-italic");
+          break;
+        case "quote":
+          article.classList.toggle("highlight-quote");
+          break;
+        case "link":
+          article.classList.toggle("highlight-link");
+          break;
+        case "figcaption":
+          article.classList.toggle("highlight-figcaption");
+          break;
+        case "h2":
+          article.classList.toggle("highlight-h2");
+          break;
+        case "h3":
+          article.classList.toggle("highlight-h3");
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+
+</html>
