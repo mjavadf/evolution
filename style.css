@@ -111,6 +111,7 @@ h3 {
 }
 
 .pink {
+  --clr-body-bg: url("/evolution/images/paper2.jpg") center center / cover repeat;
   --clr-card-bg: hsl(310 50% 100%);
   --clr-text: hsl(310 50% 15%);
   --clr-heading: hsl(310 50% 25%);
@@ -142,6 +143,7 @@ h3 {
 }
 
 :root:has(#pink:checked) {
+  --clr-body-bg: url("/evolution/images/paper2.jpg") center center / cover repeat;
   --clr-card-bg: hsl(310 50% 100%);
   --clr-text: hsl(310 50% 15%);
   --clr-heading: hsl(310 50% 25%);
